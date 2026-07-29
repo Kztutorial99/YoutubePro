@@ -22,21 +22,47 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Download smali assembler
+      - name: Write Entry.java
         run: |
-          wget -q https://github.com/google/smali/releases/download/3.0.9/smali-3.0.9.jar \
-               -O /tmp/smali.jar
-          echo "smali OK"
+          mkdir -p /tmp/javasrc/com/payload
+          cat > /tmp/javasrc/com/payload/Entry.java << 'EOF'
+          package com.payload;
+          import android.content.Context;
+          public class Entry {
+              public static void init(Context ctx) {}
+          }
+          EOF
 
-      - name: Assemble payload.dex
+      - name: Find android.jar
+        id: android_jar
         run: |
+          ANDROID_JAR=$(find $ANDROID_HOME/platforms -name "android.jar" | sort -V | tail -1)
+          echo "path=$ANDROID_JAR" >> $GITHUB_OUTPUT
+          echo "Found: $ANDROID_JAR"
+
+      - name: Compile with javac
+        run: |
+          mkdir -p /tmp/classes
+          javac -classpath "${{ steps.android_jar.outputs.path }}" \
+                -source 8 -target 8 \
+                /tmp/javasrc/com/payload/Entry.java \
+                -d /tmp/classes
+          ls -la /tmp/classes/com/payload/
+
+      - name: Convert to DEX with d8
+        run: |
+          BUILD_TOOLS=$(ls $ANDROID_HOME/build-tools/ | sort -V | tail -1)
+          BT="$ANDROID_HOME/build-tools/$BUILD_TOOLS"
           mkdir -p payload
-          java -jar /tmp/smali.jar assemble \
-            payload-src \
-            -o payload/payload.dex
-          echo "=== DEX built ==="
+          $BT/d8 \
+            --release \
+            --min-api 21 \
+            --output payload/ \
+            /tmp/classes/com/payload/Entry.class
+          mv payload/classes.dex payload/payload.dex
+          echo "=== payload.dex ==="
           ls -lh payload/payload.dex
-          xxd payload/payload.dex | head -4
+          xxd payload/payload.dex | head -3
 
       - name: Commit payload.dex to repo
         run: |
@@ -44,7 +70,7 @@ jobs:
           git config user.email "ytpro@build.ci"
           git add payload/payload.dex
           git diff --staged --quiet && echo "No changes" || \
-            git commit -m "ci: rebuild payload.dex from smali source [skip ci]"
+            git commit -m "ci: build payload.dex via d8 [skip ci]"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
