@@ -33,7 +33,7 @@ jobs:
       - name: Build APK
         run: |
           mkdir -p output
-          apktool b apk-source -o output/YouTubePro-mod-unsigned.apk
+          apktool b apk-source/YouTubePro -o output/YouTubePro-mod-unsigned.apk
 
       - name: Generate debug keystore
         run: |
