@@ -23,7 +23,7 @@ jobs:
 
       - name: Install apktool
         run: |
-          wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.1.jar \
+          wget -q https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar \
                -O /usr/local/bin/apktool.jar
           printf '#!/bin/bash\njava -jar /usr/local/bin/apktool.jar "$@"\n' \
                | sudo tee /usr/local/bin/apktool > /dev/null
