@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_item_channel_list_header_0" android:paddingTop="14.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?bz3" android:ellipsize="end" android:id="@id/tv_title" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:maxLines="1" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:sa="@id/iv_moreArr" app:sj="parent" app:s0="@id/divider" />
+    <TextView android:textSize="12.0sp" android:textColor="?bz4" android:ellipsize="end" android:id="@id/tv_subtitle" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:sa="@id/iv_moreArr" app:sj="parent" app:s0="@id/tv_title" />
+    <ImageView android:id="@id/iv_moreArr" android:tag="binding_3" android:padding="5.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="12.0dip" app:c8="@id/tv_subtitle" app:se="parent" app:s1="@id/tv_title" app:bf5="@drawable/n7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

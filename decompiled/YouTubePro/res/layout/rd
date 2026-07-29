@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_playlist_0" android:background="?ob" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/clHeader" android:background="?rh" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <ImageView android:id="@id/iv_repeat" android:tag="binding_1" android:background="?brm" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:sj="parent" app:s1="parent" app:bf5="?it" />
+        <ImageView android:id="@id/iv_shuffle" android:tag="binding_2" android:background="?brm" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:ss="@id/iv_repeat" app:s1="parent" app:bf5="?gz" />
+        <ImageView android:id="@id/iv_like" android:tag="binding_3" android:background="?brm" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:sa="@id/iv_share" app:s1="parent" app:bf5="?gg" />
+        <ImageView android:id="@id/iv_share" android:tag="binding_4" android:background="?brm" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:se="parent" app:s1="parent" app:bf5="?g4" />
+        <ImageView android:id="@id/iv_save" android:tag="binding_5" android:background="?brm" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:sa="@id/iv_clear" app:s1="parent" app:bf5="?gi" />
+        <ImageView android:id="@id/iv_clear" android:tag="binding_6" android:background="?brm" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:se="parent" app:s1="parent" app:bf5="?dh" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="46.0dip" />
+    <View android:id="@id/vShadow" android:background="?bh9" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="46.0dip" />
+</FrameLayout>

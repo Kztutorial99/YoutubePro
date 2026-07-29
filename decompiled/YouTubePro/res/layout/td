@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutFeedback" android:tag="layout/layout_base_setting_item_0" android:background="@drawable/of" android:layout_width="fill_parent" android:layout_height="@dimen/i2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/choice_icon" android:tag="binding_1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:layout_marginStart="@dimen/i3" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff202020" android:id="@id/choice_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="60.0dip" app:c8="parent" app:sj="parent" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

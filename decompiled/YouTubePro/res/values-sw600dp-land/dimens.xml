@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="up">21.0sp</dimen>
+    <dimen name="vu">5.0sp</dimen>
+    <dimen name="ve">11.0sp</dimen>
+    <dimen name="vx">6.0dip</dimen>
+    <dimen name="vz">13.0sp</dimen>
+    <dimen name="vn">10.0sp</dimen>
+    <dimen name="vh">14.0sp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="s" parent="@style/lw" />
+    <style name="w" parent="@style/ly" />
+    <style name="xk" parent="@style/n9">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="mbridge_transparent_common_activity_style" parent="@style/mbridge_common_activity_style" />
+    <style name="lw" parent="@style/l5">
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+    <style name="ly" parent="@style/l6">
+        <item name="android:navigationBarColor">@color/rt</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

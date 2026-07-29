@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_shorts_web_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vanced.module.shorts_impl.widget.ShortsPlayWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_width="@dimen/xp" android:layout_height="@dimen/xp" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" layout="@layout/n9" />
+    <androidx.appcompat.widget.AppCompatImageView android:tag="binding_1" android:background="@drawable/a7" android:padding="6.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginBottom="18.0dip" android:layout_marginEnd="60.0dip" app:c8="parent" app:se="parent" app:bf5="@drawable/cy" />
+    <View android:id="@id/viewProgress" android:tag="binding_2" android:background="@drawable/buc" android:layout_width="0.0dip" android:layout_height="2.0dip" android:translationZ="@dimen/kn" app:sa="@id/viewUnProgress" app:sj="parent" app:s1="parent" />
+    <View android:id="@id/viewUnProgress" android:tag="binding_3" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="2.0dip" app:c8="@id/viewProgress" app:se="parent" app:ss="@id/viewProgress" app:s1="@id/viewProgress" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivBack" android:tag="binding_4" android:background="?brm" android:padding="@dimen/kt" android:visibility="gone" android:saveEnabled="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="@dimen/kf" app:c8="@id/barrier_guide_btm" app:sj="parent" app:s1="parent" app:bf5="@drawable/je" />
+</androidx.constraintlayout.widget.ConstraintLayout>

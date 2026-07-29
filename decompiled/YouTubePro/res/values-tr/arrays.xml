@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Ara belleğe alınıyor</item>
+        <item>Oynayamıyor</item>
+        <item>Giriş yapamıyorum</item>
+        <item>Çok fazla reklam</item>
+        <item>Reklam hatası</item>
+        <item>Uygunsuz reklam içeriği</item>
+        <item>Başka bir uygulama kullan</item>
+    </string-array>
+</resources>

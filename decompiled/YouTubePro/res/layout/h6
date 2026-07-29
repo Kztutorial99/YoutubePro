@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/layout_my_playlist_head_item_0" android:background="?brd" android:layout_width="fill_parent" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="@dimen/ru" android:layout_height="@dimen/ru" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:layout_marginStart="@dimen/rt" app:bf5="?gx" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?bz3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/b2q" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+    <ImageView android:layout_width="@dimen/ru" android:layout_height="@dimen/ru" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:layout_marginEnd="@dimen/rt" app:bf5="@drawable/no" />
+</LinearLayout>

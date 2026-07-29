@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="@dimen/zs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center|top" android:orientation="horizontal" android:paddingLeft="@dimen/zk" android:paddingTop="@dimen/zk" android:paddingRight="@dimen/zk" android:layout_width="fill_parent" android:layout_height="@dimen/zs" android:paddingStart="@dimen/zk" android:paddingEnd="@dimen/zk" style="?bb6">
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:layout_gravity="top" android:id="@id/cancel_button" android:padding="12.0dip" android:layout_width="@dimen/hi" android:layout_height="@dimen/hi" android:insetTop="0.0dip" android:insetBottom="0.0dip" android:contentDescription="@string/bh6" app:ka="@drawable/bb9" app:bo1="@color/n1" style="?bb3" />
+        <FrameLayout android:id="@id/mtrl_picker_header_title_and_selection" android:paddingLeft="@dimen/zw" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/zw">
+            <TextView android:gravity="start|bottom|center" android:layout_gravity="start|center|top" android:id="@id/mtrl_picker_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:z2="@dimen/na" style="?bb8" />
+            <TextView android:gravity="start|bottom|center" android:layout_gravity="start|center|top" android:id="@id/mtrl_picker_header_selection_text" android:paddingBottom="@dimen/z8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:z2="@dimen/z9" app:j0="@dimen/zj" style="?bb7" />
+        </FrameLayout>
+        <LinearLayout android:orientation="@integer/j" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:layout_gravity="end|center|top" android:id="@id/confirm_button" android:layout_width="wrap_content" android:layout_height="@dimen/hi" android:text="@string/bdn" android:contentDescription="@string/bdn" style="?bb4" />
+            <include layout="@layout/kc" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/zv" style="?bb5" />
+</merge>

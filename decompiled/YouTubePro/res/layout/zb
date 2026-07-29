@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_feedback_toolbar_0" android:background="?rh" android:layout_width="fill_parent" android:layout_height="?e" android:minHeight="@dimen/kq" android:translationZ="@dimen/kn"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivBack" android:tag="binding_1" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <ImageView android:id="@id/ivEnd" android:tag="binding_2" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" app:c8="parent" app:se="parent" app:s1="parent" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?bz3" android:gravity="start" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" app:c8="parent" app:sa="@id/ivEnd" app:ss="@id/ivBack" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

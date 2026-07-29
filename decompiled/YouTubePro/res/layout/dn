@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_playlist_controller_item_0" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_shuffle_play" android:tag="binding_1" android:background="?brm" android:layout_width="48.0dip" android:layout_height="24.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:sj="parent" app:s1="parent" app:bf5="?gz" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_save" android:tag="binding_2" android:background="?brm" android:layout_width="48.0dip" android:layout_height="24.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:ss="@id/iv_shuffle_play" app:s1="parent" app:bf5="?gg" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_share" android:tag="binding_3" android:background="?brm" android:layout_width="48.0dip" android:layout_height="24.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:ss="@id/iv_save" app:s1="parent" app:bf5="?g4" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_play_all" android:tag="binding_4" android:layout_width="60.0dip" android:layout_height="36.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:c8="parent" app:se="parent" app:s1="parent" app:bf5="@drawable/v8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

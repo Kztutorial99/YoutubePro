@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/tn" android:width="@dimen/ti" />
+    <corners android:radius="@dimen/td" />
+    <solid android:color="@color/mbridge_video_common_alertview_cancel_button_bg_pressed" />
+</shape>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="FeedbackFragment" android:name="com.vanced.module.feedback_impl.page.feedback.FeedbackFragment" android:id="@id/feedbackFragment">
+        <action android:id="@id/action_feedbackFragment_to_helpFragment" app:tz="@id/helpFragment" />
+        <action android:id="@id/action_to_feedbackOptionFragment" app:tz="@id/feedbackOptionFragment" />
+        <action android:id="@id/action_to_submitFragment" app:tz="@id/submitFragment" />
+    </fragment>
+    <fragment android:label="HelpFragment" android:name="com.vanced.module.feedback_impl.page.help.HelpFragment" android:id="@id/helpFragment">
+        <action android:id="@id/action_to_feedbackOptionFragment" app:tz="@id/feedbackOptionFragment" />
+        <action android:id="@id/action_to_submitFragment" app:tz="@id/submitFragment" />
+    </fragment>
+    <fragment android:label="FeedbackOptionFragment" android:name="com.vanced.module.feedback_impl.page.feedback.FeedbackOptionFragment" android:id="@id/feedbackOptionFragment">
+        <action android:id="@id/action_to_submitFragment" app:tz="@id/submitFragment" />
+    </fragment>
+    <fragment android:label="FeedbackSubmitFragment" android:name="com.vanced.module.feedback_impl.page.feedback.FeedbackSubmitFragment" android:id="@id/submitFragment">
+        <argument android:name="params_first_option" app:b8="com.vanced.module.feedback_impl.entity.FirstOptionEntity" app:bld="true" />
+        <argument android:name="params_second_option" app:b8="com.vanced.module.feedback_impl.entity.SecondOptionEntity" app:bld="true" />
+        <argument android:name="params_nav_feedback_params" app:b8="com.vanced.module.feedback_interface.FeedbackParams" app:bld="true" />
+    </fragment>
+    <action android:id="@id/action_startDefault" app:tz="@id/feedbackFragment" />
+    <action android:id="@id/action_startOption" app:tz="@id/feedbackOptionFragment" />
+    <action android:id="@id/action_startHelp" app:tz="@id/helpFragment" />
+    <action android:id="@id/action_startSubmit" app:tz="@id/submitFragment" />
+</navigation>

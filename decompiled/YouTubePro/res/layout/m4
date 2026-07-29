@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_table_item_0" android:background="?brd" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="?bz3" android:id="@id/tvTitle" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:c9="@id/tvContent" app:se="parent" app:sj="parent" app:s1="parent" app:ja="10.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="?bz4" android:gravity="start" android:id="@id/tvContent" android:tag="binding_2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" app:c8="parent" app:se="@id/tvTitle" app:sj="@id/tvTitle" app:s0="@id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

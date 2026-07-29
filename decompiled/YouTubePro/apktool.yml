@@ -1,0 +1,24 @@
+version: 2.11.1
+apkFileName: YouTubePro_1785357223541.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 35
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 50580509
+  versionName: 5.5.80.509
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- assets/.jgapp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

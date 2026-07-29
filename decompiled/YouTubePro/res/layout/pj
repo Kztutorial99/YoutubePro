@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/ad_temp_horizontal_blur_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_blur" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" bind:c8="parent" bind:sl="1:1" bind:se="parent" bind:sj="parent" bind:s1="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="0.0dip" bind:c8="parent" bind:se="parent" bind:sj="parent" bind:s1="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/ad_include" layout="@layout/bc" />
+</LinearLayout>

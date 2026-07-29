@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/flat_rl_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/flat_iv_end_bg" android:background="@color/f7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+    <View android:id="@id/flat_view_mask" android:background="@color/f4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/flat_iv_close" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@mipmap/v" android:layout_alignParentTop="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@id/flat_iv_icon" android:background="@color/f7" android:layout_width="86.0dip" android:layout_height="86.0dip" android:src="@mipmap/pb" android:scaleType="fitXY" app:br8="@style/fb" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/gs" android:ellipsize="end" android:gravity="center" android:id="@id/flat_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="download experience" android:maxLines="3" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/gs" android:ellipsize="end" android:gravity="center" android:id="@id/flat_tv_get" android:background="@drawable/qy" android:layout_width="126.0dip" android:layout_height="39.0dip" android:layout_marginTop="20.0dip" android:text="get" android:maxLines="1" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

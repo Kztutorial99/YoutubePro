@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_dir_text_map_item_0" android:background="?brd" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="?bz3" android:id="@id/tvKey" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="12.0dip" app:c8="parent" app:sa="@id/tvValue" app:sd="2.0" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="?bz3" android:id="@id/tvValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginEnd="12.0dip" app:c8="parent" app:se="parent" app:sd="1.0" app:ss="@id/tvKey" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

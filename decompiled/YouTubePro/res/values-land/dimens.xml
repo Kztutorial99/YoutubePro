@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="u">48.0dip</dimen>
+    <dimen name="up">18.0sp</dimen>
+    <dimen name="u0">8.0dip</dimen>
+    <dimen name="tf">450.0dip</dimen>
+    <dimen name="tt">600.0dip</dimen>
+    <dimen name="zm">20.0dip</dimen>
+    <dimen name="zg">4.0dip</dimen>
+    <dimen name="zs">96.0dip</dimen>
+    <dimen name="zy">0.0dip</dimen>
+    <dimen name="z0">0.0dip</dimen>
+    <dimen name="z1">104.0dip</dimen>
+    <dimen name="z9">68.0dip</dimen>
+    <dimen name="nu">64.0dip</dimen>
+    <dimen name="ne">24.0dip</dimen>
+    <dimen name="na">32.0dip</dimen>
+    <dimen name="k7">14.0sp</dimen>
+    <dimen name="k8">4.0dip</dimen>
+    <dimen name="k9">20.0sp</dimen>
+    <dimen name="vb">16.0sp</dimen>
+    <dimen name="vp">42.0dip</dimen>
+    <dimen name="vu">7.0sp</dimen>
+    <dimen name="ve">12.0sp</dimen>
+    <dimen name="vx">10.0dip</dimen>
+    <dimen name="vf">4.0dip</dimen>
+    <dimen name="vz">13.0sp</dimen>
+    <dimen name="vn">10.0sp</dimen>
+    <dimen name="vh">16.0sp</dimen>
+</resources>

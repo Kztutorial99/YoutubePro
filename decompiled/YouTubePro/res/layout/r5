@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_search_result_0" android:background="?ob" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:layout_gravity="start" android:id="@id/tabLayout" android:tag="binding_1" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" bind:sj="parent" bind:s1="parent" bind:bqf="center" bind:bqg="0.0dip" bind:bqv="300.0dip" bind:bqc="20.0dip" bind:bqs="scrollable" bind:bqy="4.0dip" bind:bq0="4.0dip" bind:bq2="@android:color/transparent" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshLayout" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="0.0dip" bind:c8="parent" bind:se="parent" bind:sj="parent" bind:s0="@id/tabLayout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/upgrade_fragment_container" android:layout_width="fill_parent" android:layout_height="0.0dip" bind:c8="parent" bind:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

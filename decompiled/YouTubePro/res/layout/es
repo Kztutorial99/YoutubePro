@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/flat_image_bg" android:background="@drawable/zl" android:layout_width="280.0dip" android:layout_height="180.0dip" android:layout_marginTop="33.0dip" app:se="parent" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/pb" android:id="@id/flat_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Are you sure to close video?" app:se="parent" app:sj="parent" app:s0="@id/flat_icon" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff9d9ea0" android:id="@id/flat_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="You will lose the reward." app:se="parent" app:sj="parent" app:s0="@id/flat_title" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff9d9ea0" android:gravity="center" android:id="@id/flat_sure" android:background="@drawable/za" android:layout_width="125.0dip" android:layout_height="37.0dip" android:layout_marginBottom="9.0dip" android:text="Close" app:c8="parent" app:sa="@id/flat_resume" app:sj="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gs" android:gravity="center" android:id="@id/flat_resume" android:background="@drawable/ze" android:layout_width="125.0dip" android:layout_height="37.0dip" android:layout_marginBottom="9.0dip" android:text="Resume" app:c8="parent" app:se="parent" app:ss="@id/flat_sure" />
+    <ImageView android:id="@id/flat_icon" android:layout_width="67.0dip" android:layout_height="67.0dip" android:src="@mipmap/pu" app:se="parent" app:sj="parent" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

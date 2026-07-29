@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/shareRoot" android:tag="layout/dialog_share_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:tag="binding_1" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" style="@style/x9" />
+    <View android:id="@id/viewTop" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="0.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" app:s3="spread_inside" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideContainerTop" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sx="0.3" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:c3="true" app:c8="parent" app:se="parent" app:sq="142.0dip" app:sj="parent" app:s0="@id/guideContainerTop" app:s2="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

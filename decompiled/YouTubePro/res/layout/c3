@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:background="#cc010101" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_left" android:layout_width="0.0dip" android:layout_height="wrap_content" app:c8="parent" app:sa="@id/fl_center" app:sd="1.0" app:sj="parent" app:s1="parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="105.0dip" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:bf5="@drawable/zs" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/b2k" />
+            <TextView android:textSize="12.0sp" android:textColor="?o9" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/b2v" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_center" android:layout_width="0.0dip" android:layout_height="wrap_content" app:sa="@id/fl_right" app:sd="2.0" app:ss="@id/fl_left" app:s1="@id/fl_left">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="105.0dip" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:bf5="@drawable/zj" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/b2c" />
+            <TextView android:textSize="12.0sp" android:textColor="?o9" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/b2s" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_right" android:layout_width="0.0dip" android:layout_height="wrap_content" app:se="parent" app:sd="1.0" app:ss="@id/fl_center" app:s1="@id/fl_left">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="105.0dip" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:bf5="@drawable/zw" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/b2y" />
+            <TextView android:textSize="12.0sp" android:textColor="?o9" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/b20" />
+        </LinearLayout>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/close_guide" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginBottom="36.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:bf5="@drawable/ct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

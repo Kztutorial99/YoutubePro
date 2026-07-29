@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_incognito_setting_item_0" android:background="@drawable/of" android:layout_width="fill_parent" android:layout_height="@dimen/i2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:layout_marginStart="@dimen/i3" app:c8="parent" app:sj="parent" app:s1="parent" app:bf5="@drawable/gi" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff202020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bhn" android:layout_marginStart="60.0dip" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/incognito_mode_switch" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/bpt" android:layout_marginEnd="12.0dip" app:c8="parent" app:se="parent" app:s1="parent" app:bql="30.0dip" app:bdq="@drawable/bpq" />
+</androidx.constraintlayout.widget.ConstraintLayout>

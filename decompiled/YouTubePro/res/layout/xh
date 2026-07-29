@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_trending_parent_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" bind:c9="@id/tabLayout" bind:se="parent" bind:sj="parent" bind:s1="parent" layout="@layout/zc" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="?rn" android:layout_width="fill_parent" android:layout_height="36.0dip" bind:se="parent" bind:sj="parent" bind:s1="parent" bind:bqz="@drawable/bew" bind:bqd="?rm" bind:bqm="false" bind:bqg="2.0dip" bind:bqs="scrollable" bind:bq3="?rg" bind:bq5="@style/od" bind:bq6="?ri" />
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:background="?ob" android:layout_width="fill_parent" android:layout_height="0.0dip" bind:c8="parent" bind:se="parent" bind:sj="parent" bind:s0="@id/tabLayout" />
+        <FrameLayout android:tag="@string/bfp" android:layout_width="0.0dip" android:layout_height="0.0dip" bind:c8="parent" bind:se="parent" bind:sj="parent" bind:s1="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

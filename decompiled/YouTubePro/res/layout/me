@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_shorts_head_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_shortsTitle" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="12.0dip" app:sj="parent" app:s1="parent" app:bf5="@drawable/js" />
+    <TextView android:textStyle="bold" android:textColor="?bz3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bwx" android:layout_marginStart="4.0dip" app:c8="@id/iv_shortsTitle" app:ss="@id/iv_shortsTitle" app:s1="@id/iv_shortsTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

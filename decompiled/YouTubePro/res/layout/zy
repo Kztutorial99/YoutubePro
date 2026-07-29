@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layoutRoot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivAppIcon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="10.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/llSearch" android:background="@drawable/blr" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_weight="1.0" android:layout_marginEnd="4.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/dm" android:layout_gravity="center_vertical" android:id="@id/tvSearchHint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivSearchIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="12.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivMore" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="8.0dip" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivClose" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="8.0dip" />
+</LinearLayout>

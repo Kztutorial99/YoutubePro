@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_video_detail_skeleton_comment_0" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/titleGuide" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sx="0.45" />
+    <View android:id="@id/tvTitle0" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="14.0sp" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:c4="true" app:se="@id/titleGuide" app:sj="parent" app:s1="parent" />
+    <View android:id="@id/ivAvatar" android:tag="binding_2" android:background="?u4" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="12.0dip" app:sj="parent" app:s0="@id/tvTitle0" />
+    <View android:id="@id/tvTitle1" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="14.0sp" android:layout_marginStart="8.0dip" android:layout_marginEnd="12.0dip" app:c9="@id/tvTitle" app:se="parent" app:ss="@id/ivAvatar" app:s1="@id/ivAvatar" />
+    <View android:id="@id/tvTitle" android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="14.0sp" android:layout_marginTop="5.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="12.0dip" app:c8="@id/ivAvatar" app:se="parent" app:ss="@id/ivAvatar" app:s0="@id/tvTitle1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

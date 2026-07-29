@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmerLayout" android:tag="layout/layout_channel_podcasts_loading_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bxa="?bxr" app:bxf="left_to_right" app:bxq="800" app:bxm="?bxr" app:bxj="0.5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/loading_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/video1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:s1="parent" layout="@layout/ts" />
+        <include android:id="@id/video2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:s0="@id/video1" layout="@layout/ts" />
+        <include android:id="@id/video3" android:layout_width="fill_parent" android:layout_height="wrap_content" app:s0="@id/video2" layout="@layout/ts" />
+        <include android:id="@id/video4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:s0="@id/video3" layout="@layout/ts" />
+        <include android:id="@id/video5" android:layout_width="fill_parent" android:layout_height="wrap_content" app:s0="@id/video4" layout="@layout/ts" />
+        <include android:id="@id/video6" android:layout_width="fill_parent" android:layout_height="wrap_content" app:s0="@id/video5" layout="@layout/ts" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

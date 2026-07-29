@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/clRoot" android:tag="layout/fragment_video_detail_more_options_0" android:background="?of" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_host_fragment" android:layout_width="0.0dip" android:layout_height="fill_parent" app:te="true" app:sa="@id/iv_close" app:sj="parent" app:s1="parent" app:blu="@navigation/e" />
+    <ImageView android:id="@id/iv_close" android:padding="3.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginEnd="12.0dip" app:se="parent" app:s1="parent" app:bf5="?dd" />
+</androidx.constraintlayout.widget.ConstraintLayout>

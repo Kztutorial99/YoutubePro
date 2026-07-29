@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="LoginFragment" android:name="com.vanced.module.account_impl.page.login.LoginFragment" android:id="@id/loginFragment">
+        <argument android:name="buriedPoint" app:b8="com.vanced.buried_point_interface.transmit.IBuriedPointTransmit" />
+        <argument android:name="loginMode" app:b8="com.vanced.module.account_impl.page.login.LoginMode" />
+    </fragment>
+    <fragment android:label="AccountManagerFragment" android:name="com.vanced.module.account_impl.page.account_manager.AccountManagerFragment" android:id="@id/accountManagerFragment">
+        <argument android:name="buriedPoint" app:b8="com.vanced.buried_point_interface.transmit.IBuriedPointTransmit" />
+        <action android:id="@id/action_accountManagerFragment_to_loginFragment" app:tz="@id/loginFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zx">0.0dip</dimen>
+    <dimen name="zt">22.0dip</dimen>
+    <dimen name="zq">48.0dip</dimen>
+    <dimen name="zd">48.0dip</dimen>
+    <dimen name="z1">168.0dip</dimen>
+    <dimen name="z3">0.0dip</dimen>
+</resources>

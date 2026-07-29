@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_cps_campaign_small_banner_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vanced.product.widget.RoundRadiusLayout android:id="@id/rl_goods_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:bo4="7.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_goods" android:tag="binding_1" android:background="?fg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_above="@id/layout_des" />
+    </com.vanced.product.widget.RoundRadiusLayout>
+</FrameLayout>

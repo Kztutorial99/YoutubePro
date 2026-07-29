@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Буферизація</item>
+        <item>Не можу грати</item>
+        <item>Не вдається увійти в систему</item>
+        <item>Занадто багато реклами</item>
+        <item>Помилка з рекламою</item>
+        <item>Неприйнятний рекламний контент</item>
+        <item>Використовуйте іншу програму</item>
+    </string-array>
+</resources>

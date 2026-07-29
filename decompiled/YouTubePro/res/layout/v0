@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/player_simple_overlay_0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivSound" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:layout_marginEnd="20.0dip" app:se="parent" app:s1="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivSetting" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:layout_marginEnd="12.0dip" app:sa="@id/ivSound" app:s1="parent" app:bf5="@drawable/vg" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/tvDuration" android:tag="binding_1" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginEnd="8.0dip" app:c8="parent" app:se="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

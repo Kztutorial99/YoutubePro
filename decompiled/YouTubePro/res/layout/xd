@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_unnext_catapult_0" android:background="?ob" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_titleList" android:layout_width="fill_parent" android:layout_height="wrap_content" app:s1="parent" />
+    <View android:id="@id/v_playlist_info_shadow" android:background="?brs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/stub_playlist_info" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:s0="@id/rv_titleList" />
+    <ViewStub android:id="@id/stub_playlist_info" android:layout="@layout/c8" android:inflatedId="@id/stub_playlist_info" android:layout_width="fill_parent" android:layout_height="46.0dip" app:s0="@id/v_playlist_info_shadow" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="0.0dip" app:c8="parent" app:s0="@id/stub_playlist_info" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/v_playlist_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:c8="parent" app:s0="@id/stub_playlist_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

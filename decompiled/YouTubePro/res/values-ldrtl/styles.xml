@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="o0" parent="@android:style/Widget.EditText">
+        <item name="android:gravity">center|right</item>
+        <item name="android:textDirection">rtl</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="nn" parent="@android:style/Widget.TextView">
+        <item name="android:textDirection">rtl</item>
+    </style>
+    <style name="ja" parent="@style/o0">
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="jn" parent="@style/o0">
+        <item name="android:gravity">center|right</item>
+        <item name="android:paddingLeft">28.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+    </style>
+</resources>

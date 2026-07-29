@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanced.product.widget.RoundRadiusLayout android:id="@id/rl_goods_item" android:tag="layout/item_ad_picture_0" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginStart="12.0dip" app:bo4="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_goods" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+</com.vanced.product.widget.RoundRadiusLayout>

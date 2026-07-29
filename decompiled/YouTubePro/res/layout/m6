@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivSun" android:layout_width="0.0dip" android:layout_height="fill_parent" app:c8="parent" app:sl="1" app:sa="@id/switchView" app:sh="packed" app:sj="parent" app:s1="parent" app:bf5="@drawable/gr" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/switchView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:c8="parent" app:sa="@id/ivMoon" app:ss="@id/ivSun" app:s1="parent" style="@style/m7" />
+    <ImageView android:id="@id/ivMoon" android:layout_width="0.0dip" android:layout_height="fill_parent" app:c8="parent" app:sl="1" app:se="parent" app:ss="@id/switchView" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

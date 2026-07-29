@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmerLayout" android:tag="layout/layout_loading_item_home_filter_0" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:bxl="true" bind:bxa="?bxr" bind:bxf="left_to_right" bind:bxq="800" bind:bxm="?bxr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/n0" />
+        <include layout="@layout/nw" />
+        <include layout="@layout/nw" />
+        <include layout="@layout/nw" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.facebook.shimmer.ShimmerFrameLayout>

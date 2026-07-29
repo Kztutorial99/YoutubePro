@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#4d000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/flat_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent">
+        <ImageView android:id="@id/flat_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:src="@mipmap/bg" android:adjustViewBounds="true" android:layout_marginEnd="70.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" />
+        <ImageView android:id="@id/flat_finger" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@mipmap/q" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/gs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:text="Click now for details" app:se="parent" app:sj="parent" app:s1="@id/flat_animation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

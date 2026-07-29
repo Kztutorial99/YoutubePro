@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="po" parent="@android:style/TextAppearance.Material.Widget.Button.Colored" />
+    <style name="zt" parent="@style/zf" />
+    <style name="zn" parent="@style/zx" />
+    <style name="zd" parent="@style/zh" />
+    <style name="zi" parent="@style/zm" />
+</resources>

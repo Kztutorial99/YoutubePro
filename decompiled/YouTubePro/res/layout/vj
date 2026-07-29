@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/overlayRoot" android:tag="layout/player_pager_overlay_0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/playbackControlRoot" android:background="@color/gv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_gravity="top" android:id="@id/playerTopShadow" android:background="@drawable/buh" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+            <View android:layout_gravity="bottom" android:id="@id/playerBottomShadow" android:background="@drawable/bun" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivPlayPause" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivSound" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:layout_marginEnd="20.0dip" app:se="parent" app:s1="parent" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/tvDuration" android:tag="binding_1" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginEnd="8.0dip" app:c8="parent" app:se="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

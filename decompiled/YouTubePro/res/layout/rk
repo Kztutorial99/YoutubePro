@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_playlist_detail_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/qj" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:background="?ob" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/refreshLayout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <include android:layout_gravity="center" android:id="@id/loadingView" android:layout_width="80.0dip" android:layout_height="80.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" layout="@layout/hb" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vanced.ad.ad_sdk.ui.NativeAdLayout android:id="@id/ad_native_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginStart="34.0dip" android:layout_marginEnd="34.0dip" app:c8="parent" app:se="@id/iv_close" app:sj="parent" app:s1="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ad_native" android:background="#ff1a1919" android:layout_width="fill_parent" android:layout_height="fill_parent" app:se="parent" app:sj="parent" app:s1="parent">
+            <FrameLayout android:id="@id/ad_media_view_layout" android:background="#f2202120" android:layout_width="0.0dip" android:layout_height="0.0dip" app:c9="@id/ad_headline" app:se="parent" app:sj="parent" app:s1="parent" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_ad" android:layout_width="20.0dip" android:layout_height="12.0dip" android:src="@drawable/yq" android:layout_marginStart="12.0dip" app:c8="@id/ad_headline" app:sj="parent" app:s1="@id/ad_headline" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/gs" android:ellipsize="end" android:gravity="start" android:id="@id/ad_headline" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="This is Ad HeadlineThis is Ad HeadlineThis is Ad HeadlineThis is Ad HeadlineThis is Ad HeadlineThis is Ad HeadlineThis is Ad HeadlineThis is Ad HeadlineThis is Ad Headline" android:lines="1" app:c8="parent" app:sa="@id/ad_choice_layout" app:ss="@id/iv_ad" />
+            <RelativeLayout android:id="@id/ad_choice_layout" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginBottom="5.0dip" android:layout_marginEnd="5.0dip" app:c8="parent" app:se="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.vanced.ad.ad_sdk.ui.NativeAdLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/b" android:layout_marginStart="10.0dip" app:se="parent" app:ss="@id/ad_native_layout" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

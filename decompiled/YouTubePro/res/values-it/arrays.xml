@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Tamponamento</item>
+        <item>Impossibile riprodurre</item>
+        <item>"Impossibile effettuare l'accesso"</item>
+        <item>Troppi annunci</item>
+        <item>Bug degli annunci</item>
+        <item>"Contenuto dell'annuncio inappropriato"</item>
+        <item>"Utilizza un'altra app"</item>
+    </string-array>
+</resources>

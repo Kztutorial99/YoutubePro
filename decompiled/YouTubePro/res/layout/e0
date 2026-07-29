@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/flat_dialog_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/flat_ns_container" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/flat_cl_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/gs" android:id="@id/flat_tv_btn_done" android:background="@drawable/q3" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="DONE" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginStart="10.0dip" />
+            <include layout="@layout/eb" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ViewStub android:id="@id/flat_vs_end_page" android:layout="@layout/e1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.flatads.sdk.core.domain.ui.widget.AdPrivacyPolicyView android:id="@id/flat_btn_privacy" android:padding="8.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

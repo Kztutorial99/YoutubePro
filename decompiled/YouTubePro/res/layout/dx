@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_option_item_0" android:background="?brd" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/m6" android:paddingStart="@dimen/m9">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivOption" android:layout_width="@dimen/m7" android:layout_height="@dimen/m7" />
+        <TextView android:textSize="16.0sp" android:textColor="?bz3" android:gravity="start" android:id="@id/tvOption" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/m8" android:layout_marginEnd="6.0dip" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivEndIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="6.0dip" app:bf5="@drawable/mk" />
+    </LinearLayout>
+    <View android:background="?rf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/video_detail_mini_player_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/overlay_background" android:background="?bub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/overlay_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/overlay_thumbnail_space" android:layout_width="@dimen/t7" android:layout_height="@dimen/t6" android:layout_alignParentStart="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/thumbnail_image_view" android:background="@android:color/transparent" android:layout_width="@dimen/t7" android:layout_height="@dimen/t6" android:scaleType="fitCenter" android:contentDescription="@string/bu0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/overlay_metadata_layout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/t6" android:layout_marginStart="8.0dip" android:layout_toStartOf="@id/overlay_buttons_layout" android:layout_toEndOf="@id/overlay_thumbnail_space">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="12.0dip" android:ellipsize="marquee" android:id="@id/overlay_title_text_view" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0dip" android:ellipsize="marquee" android:id="@id/overlay_channel_text_view" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/overlay_buttons_layout" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/t6" android:paddingStart="6.0dip" android:layout_alignParentEnd="true">
+            <FrameLayout android:id="@id/overlay_play_pause_button_wrap" android:background="?bub" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/overlay_play_pause_button" android:background="?brd" android:padding="10.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:scaleType="center" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" app:bf5="?im" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/overlay_queue_button_wrap" android:background="?bub" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/overlay_queue_button" android:background="?brd" android:padding="10.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:scaleType="center" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" app:bf5="?ga" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/overlay_close_button_wrap" android:background="?bub" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="6.0dip">
+                <ImageButton android:id="@id/overlay_close_button" android:background="?brd" android:padding="10.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="2.0dip" android:scaleType="center" android:layout_marginStart="2.0dip" app:bf5="?dd" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

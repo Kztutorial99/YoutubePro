@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="300.0dip" android:minWidth="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/buu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="12.0dip" android:elevation="3.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff212121" android:gravity="center_vertical" android:id="@id/tv_not_interested" android:background="@drawable/bup" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/bc" android:drawableLeft="@drawable/bua" android:drawablePadding="8.0dip" android:drawableStart="@drawable/bua" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff212121" android:gravity="center_vertical" android:id="@id/tv_report" android:background="@drawable/bup" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/b3" android:drawableLeft="@drawable/buf" android:drawablePadding="8.0dip" android:drawableStart="@drawable/buf" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff212121" android:gravity="center_vertical" android:id="@id/tv_remove_ads" android:background="@drawable/bup" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/b1" android:drawableLeft="@drawable/bux" android:drawablePadding="8.0dip" android:drawableStart="@drawable/bux" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

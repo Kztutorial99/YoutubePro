@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout android:orientation="vertical" android:tag="layout/fragment_search_little_filter_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationZ="4.0dip" app:z3="column" app:z4="nowrap" app:se="parent" app:s1="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

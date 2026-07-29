@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.flatads.sdk.core.domain.ui.common.RatingBar android:id="@id/flat_rb_score" android:layout_width="80.0dip" android:layout_height="14.0dip" android:isIndicator="true" app:bf8="5" app:bf9="@mipmap/bf" app:btb="@mipmap/bt" app:btp="@mipmap/bf" app:btu="12.0dip" app:btv="Half" style="@style/jz" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/ge" android:gravity="center" android:id="@id/flat_tv_score" android:layout_width="wrap_content" android:layout_height="14.0dip" android:text="(16888)" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/flat_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/flat_portrait" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" app:se="parent" app:ss="@id/flat_more_app">
+        <com.flatads.sdk.ui.view.AdMediaView android:id="@id/flat_portrait_media" android:layout_width="0.0dip" android:layout_height="fill_parent" app:vh="true" app:sa="@id/flat_portrait_detail" app:sj="parent" />
+        <include android:id="@id/flat_portrait_detail" android:layout_width="280.0dip" android:layout_height="fill_parent" app:se="parent" layout="@layout/ev" />
+        <com.flatads.sdk.ui.view.AdInfoView android:id="@id/flat_portrait_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" app:c8="parent" app:sj="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/flat_landscape" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" app:se="parent" app:ss="@id/flat_more_app">
+        <com.flatads.sdk.ui.view.AdMediaView android:id="@id/flat_landscape_media" android:layout_width="fill_parent" android:layout_height="0.0dip" app:vh="true" app:c9="@id/flat_landscape_detail" app:s1="parent" />
+        <include android:id="@id/flat_landscape_detail" android:layout_width="fill_parent" android:layout_height="70.0dip" app:c8="parent" layout="@layout/eg" />
+        <com.flatads.sdk.ui.view.AdInfoView android:id="@id/flat_landscape_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" app:c8="parent" app:sj="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/flat_web" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.flatads.sdk.ui.view.AdMediaView android:id="@id/flat_full_media" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.flatads.sdk.ui.view.AdInfoView android:id="@id/flat_full_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" app:c8="parent" app:sj="parent" />
+    <com.flatads.sdk.ui.view.AdMoreAppView android:id="@id/flat_more_app" android:visibility="gone" android:layout_width="77.0dip" android:layout_height="fill_parent" app:sj="parent" />
+    <include android:id="@id/flat_layout_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" app:se="parent" app:s1="parent" layout="@layout/ed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

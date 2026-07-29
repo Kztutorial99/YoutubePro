@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="pc" parent="@style/lc" />
+    <style name="p2" parent="@style/ls" />
+    <style name="ay" parent="@style/lj" />
+    <style name="kt" parent="@android:style/Widget">
+        <item name="android:background">?o8</item>
+        <item name="android:stateListAnimator">@animator/u</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="mbridge_transparent_common_activity_style" parent="@style/mbridge_common_activity_style">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="lc" parent="@style/lk">
+        <item name="ot">?android:colorError</item>
+    </style>
+    <style name="ls" parent="@style/lv">
+        <item name="ot">?android:colorError</item>
+    </style>
+    <style name="lj" parent="@style/ee">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+</resources>

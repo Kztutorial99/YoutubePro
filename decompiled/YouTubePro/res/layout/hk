@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_me_toolbar_0" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/t4" android:layout_marginBottom="0.0dip" android:minHeight="@dimen/kq"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/clNotification" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:c8="parent" app:se="parent" app:s1="parent" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?bz3" android:ellipsize="end" android:gravity="start" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bha" android:maxLines="1" android:lines="1" android:layout_marginStart="12.0dip" android:layout_marginEnd="5.0dip" app:c8="parent" app:sa="@id/themeSwitchWrap" app:ss="@id/ivBack" app:s1="parent" />
+    <FrameLayout android:id="@id/themeSwitchWrap" android:tag="binding_3" android:background="?brm" android:layout_width="wrap_content" android:layout_height="fill_parent" app:c8="parent" app:sa="@id/clNotification" app:s1="parent" app:jo="10.0dip">
+        <com.vanced.module.me_impl.widget.ThemeSwitchView android:layout_gravity="center" android:id="@id/themeSwitch" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="24.0dip" app:bd3="24.0dip" />
+    </FrameLayout>
+    <ImageView android:id="@id/ivBack" android:tag="binding_5" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <View android:background="@color/nw" android:layout_width="0.0dip" android:layout_height="1.0dip" app:c8="parent" app:se="parent" app:sj="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_video_detail_small_like_button_0" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="4.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/like" android:background="@drawable/bll" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivLike" android:padding="1.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="11.0sp" android:id="@id/tvLike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" app:bf5="?kb" />
+            <View android:background="#ffe0e0e0" android:layout_width="1.0dip" android:layout_height="16.0dip" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dislike" android:background="@drawable/ble" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="5.0dip" android:paddingEnd="8.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivDislike" android:padding="1.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" app:bf5="?g9" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="11.0sp" android:id="@id/tvDislike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

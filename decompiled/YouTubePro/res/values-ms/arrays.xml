@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Penimbunan</item>
+        <item>Tidak dapat dimainkan</item>
+        <item>Tidak boleh log masuk</item>
+        <item>Iklan terlalu banyak</item>
+        <item>Bug Iklan</item>
+        <item>Kandungan iklan yang tidak senonoh</item>
+        <item>Guna aplikasi lain</item>
+    </string-array>
+</resources>

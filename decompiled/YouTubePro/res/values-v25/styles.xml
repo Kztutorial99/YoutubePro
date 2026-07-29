@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="xc" parent="@style/x6" />
+    <style name="xs" parent="@style/x7" />
+    <style name="x6" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="x7" parent="@android:style/Theme.Material.Light.NoActionBar" />
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/gq" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/flat_ll_bg" android:background="@color/gs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" app:s1="@id/flat_iv_icon">
+        <TextView android:textSize="21.0sp" android:textColor="@color/pb" android:ellipsize="end" android:gravity="center" android:id="@id/flat_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="61.0dip" android:text="Title Title" android:maxLines="1" android:layout_marginStart="92.0dip" android:layout_marginEnd="92.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/ge" android:ellipsize="end" android:gravity="center" android:id="@id/flat_tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Description Description Description Description Description Description Description Description Description " android:maxLines="2" android:layout_marginStart="43.0dip" android:layout_marginEnd="43.0dip" />
+        <include android:layout_gravity="center" android:id="@id/flat_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" layout="@layout/at" />
+        <TextView android:textStyle="bold" android:textColor="@color/gs" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/flat_tv_btn" android:background="@drawable/qj" android:layout_width="240.0dip" android:layout_height="35.0dip" android:layout_marginTop="30.0dip" android:text="CTA Button" android:maxLines="1" />
+        <ImageView android:layout_gravity="center" android:layout_width="39.0dip" android:layout_height="7.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="32.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/flat_iv_icon" android:background="@color/gq" android:layout_width="80.0dip" android:layout_height="80.0dip" app:se="parent" app:sj="parent" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

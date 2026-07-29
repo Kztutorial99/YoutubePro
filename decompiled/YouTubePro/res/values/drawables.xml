@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="fr">@drawable/te</item>
+    <item type="drawable" name="ft">@drawable/tr</item>
+    <item type="drawable" name="fq">@drawable/tx</item>
+    <item type="drawable" name="fz">@drawable/tf</item>
+    <item type="drawable" name="fn">@drawable/tt</item>
+    <item type="drawable" name="fh">@drawable/tq</item>
+    <item type="drawable" name="fd">@drawable/tz</item>
+    <item type="drawable" name="fm">@drawable/tn</item>
+    <item type="drawable" name="fi">@drawable/th</item>
+    <item type="drawable" name="fg">@drawable/td</item>
+    <item type="drawable" name="fk">@drawable/tm</item>
+    <item type="drawable" name="fv">@drawable/tg</item>
+    <item type="drawable" name="tj">@drawable/tr</item>
+    <item type="drawable" name="tw">@drawable/tx</item>
+    <item type="drawable" name="ty">@drawable/tf</item>
+    <item type="drawable" name="t0">@drawable/tt</item>
+    <item type="drawable" name="vk">@drawable/fo</item>
+    <item type="drawable" name="vv">@drawable/fo</item>
+    <item type="drawable" name="si">@drawable/fo</item>
+    <item type="drawable" name="sg">@drawable/fo</item>
+    <item type="drawable" name="s4">@drawable/fo</item>
+    <item type="drawable" name="s5">@drawable/fo</item>
+    <item type="drawable" name="s8">@drawable/bb0</item>
+    <item type="drawable" name="ji">@drawable/fa</item>
+    <item type="drawable" name="j5">@drawable/fo</item>
+    <item type="drawable" name="j6">@drawable/fo</item>
+    <item type="drawable" name="bbi">@drawable/bbg</item>
+    <item type="drawable" name="bpu">@drawable/bpe</item>
+    <item type="drawable" name="bpl">@drawable/bpp</item>
+    <item type="drawable" name="buq">@drawable/bl3</item>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_video_detail_anim_functional_botton_0" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:paddingTop="@dimen/rb" android:paddingBottom="@dimen/rb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="55.0dip">
+        <FrameLayout android:layout_gravity="center" android:id="@id/rippleView" android:layout_width="10.0dip" android:layout_height="10.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" />
+        <FrameLayout android:id="@id/iconContainer" android:layout_width="24.0dip" android:layout_height="24.0dip" app:c9="@id/btTv" app:se="parent" app:sj="parent" app:s1="parent">
+            <com.vanced.module.share_interface.widget.ShareAnimButton android:layout_gravity="center" android:id="@id/btIv" android:tag="binding_2" android:layout_width="24.0dip" android:layout_height="24.0dip" app:tx="10000" app:tv="3000" app:vq="30000" app:bf5="?g4" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:id="@id/btTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:includeFontPadding="false" app:c8="parent" app:se="parent" app:sj="parent" app:s0="@id/iconContainer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
