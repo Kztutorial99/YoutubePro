@@ -1,0 +1,50 @@
+name: Build payload.dex
+
+on:
+  push:
+    paths:
+      - 'payload-src/**'
+  workflow_dispatch:
+
+jobs:
+  build-dex:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Download smali assembler
+        run: |
+          wget -q https://github.com/google/smali/releases/download/3.0.9/smali-3.0.9.jar \
+               -O /tmp/smali.jar
+          echo "smali OK"
+
+      - name: Assemble payload.dex
+        run: |
+          mkdir -p payload
+          java -jar /tmp/smali.jar assemble \
+            payload-src \
+            -o payload/payload.dex
+          echo "=== DEX built ==="
+          ls -lh payload/payload.dex
+          xxd payload/payload.dex | head -4
+
+      - name: Commit payload.dex to repo
+        run: |
+          git config user.name  "YTPro Builder"
+          git config user.email "ytpro@build.ci"
+          git add payload/payload.dex
+          git diff --staged --quiet && echo "No changes" || \
+            git commit -m "ci: rebuild payload.dex from smali source [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
