@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_recommend_channel_0" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivThumbnail" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" app:sl="1:1" app:se="parent" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="14.0sp" android:textColor="?bz3" android:ellipsize="end" android:id="@id/tvTitle" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="2" app:se="parent" app:sj="@id/ivThumbnail" app:s0="@id/ivThumbnail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

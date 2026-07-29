@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutLoading" android:tag="layout/layout_loading_one_short_video_0" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/s_center" android:layout_width="1.0dip" android:layout_height="1.0dip" bind:se="parent" bind:sj="parent" bind:s1="parent" />
+    <View android:id="@id/tv_title1" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="16.0dip" android:alpha="0.25" bind:se="@id/s_center" bind:sj="parent" bind:s1="parent" />
+    <View android:id="@id/tv_title2" android:tag="binding_2" android:layout_width="49.0dip" android:layout_height="16.0dip" android:alpha="0.25" bind:se="parent" bind:s1="parent" />
+    <View android:id="@id/iv_avatar" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="82.0dip" android:layout_marginTop="24.0dip" android:alpha="0.25" bind:sl="w,146:82" bind:sj="parent" bind:s0="@id/tv_title1" />
+    <View android:id="@id/dec1" android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="12.0dip" android:alpha="0.25" android:layout_marginStart="12.0dip" android:layout_marginEnd="28.0dip" bind:sa="@id/dec5" bind:ss="@id/iv_avatar" bind:s1="@id/iv_avatar" />
+    <View android:id="@id/dec2" android:tag="binding_5" android:layout_width="0.0dip" android:layout_height="12.0dip" android:layout_marginTop="4.0dip" android:alpha="0.25" android:layout_marginStart="12.0dip" android:layout_marginEnd="28.0dip" bind:sa="@id/dec5" bind:ss="@id/iv_avatar" bind:s0="@id/dec1" />
+    <View android:id="@id/dec3" android:tag="binding_6" android:layout_width="0.0dip" android:layout_height="12.0dip" android:layout_marginTop="4.0dip" android:alpha="0.25" android:layout_marginStart="12.0dip" android:layout_marginEnd="28.0dip" bind:sa="@id/dec5" bind:ss="@id/iv_avatar" bind:s0="@id/dec2" />
+    <Space android:id="@id/dec_center" android:layout_width="1.0dip" android:layout_height="1.0dip" bind:sa="@id/dec5" bind:ss="@id/iv_avatar" bind:s1="parent" />
+    <View android:id="@id/dec4" android:tag="binding_7" android:layout_width="0.0dip" android:layout_height="12.0dip" android:layout_marginTop="4.0dip" android:alpha="0.15" android:layout_marginStart="12.0dip" bind:sa="@id/dec_center" bind:ss="@id/iv_avatar" bind:s0="@id/dec3" />
+    <View android:id="@id/dec5" android:tag="binding_8" android:layout_width="20.0dip" android:layout_height="20.0dip" android:alpha="0.25" bind:se="parent" bind:s1="@id/iv_avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

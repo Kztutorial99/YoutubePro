@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_internal_browser_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="?rh" android:layout_width="fill_parent" android:layout_height="?e" android:minHeight="@dimen/kq" android:translationZ="@dimen/kn">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/backBt" android:tag="binding_1" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" bind:c8="parent" bind:sj="parent" bind:s1="parent" bind:bf5="?db" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/closeBt" android:tag="binding_2" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" bind:c8="parent" bind:se="parent" bind:s1="parent" bind:bf5="?kn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/webViewLayout" layout="@layout/dj" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_share_pages_0" android:layout_width="fill_parent" android:layout_height="0.0dip" app:c8="parent" app:s0="@id/tvTitle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="?of" android:layout_width="fill_parent" android:layout_height="@dimen/ks" android:translationZ="2.0dip" app:se="parent" app:sj="parent" app:bqz="@drawable/bew" app:bqd="?rm" app:bqm="false" app:bqg="@dimen/kj" app:bqs="fixed" app:bq3="?rg" app:bq5="@style/od" app:bq6="?ri" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:tag="binding_1" android:background="?of" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

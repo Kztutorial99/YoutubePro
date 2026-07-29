@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_livechat_report_option_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/optionArea" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sj="parent" app:s1="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/optionIv" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="24.0dip" android:layout_marginVertical="12.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="?bz3" android:gravity="left" android:id="@id/optionTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="24.0dip" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/subOptionArea" android:tag="binding_1" android:visibility="gone" android:layout_width="232.0dip" android:layout_height="wrap_content" android:layout_marginStart="60.0dip" android:layout_marginEnd="18.0dip" app:se="parent" app:s0="@id/optionArea">
+        <TextView android:textSize="12.0sp" android:textColor="?wk" android:ellipsize="end" android:gravity="start" android:id="@id/selectedSubOptionTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:maxLines="1" android:layout_marginHorizontal="12.0dip" android:layout_marginVertical="6.0dip" app:c8="parent" app:sa="@id/subOptionPullDownIv" app:sj="parent" app:s1="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/subOptionPullDownIv" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginEnd="16.0dip" android:layout_marginVertical="5.0dip" app:c8="parent" app:se="parent" app:s1="parent" app:bf5="?m3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

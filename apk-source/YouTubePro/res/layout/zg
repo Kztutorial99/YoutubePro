@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_history_outside_group_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tabLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" app:sa="@id/barrierTabEnd" app:sj="parent" app:s1="parent">
+        <FrameLayout android:id="@id/recentTab" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="40.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:sj="parent" app:s1="parent">
+            <TextView android:layout_gravity="center" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="bottom|center" android:tag="binding_3" android:background="?o9" android:layout_width="32.0dip" android:layout_height="1.0dip" android:layout_marginBottom="3.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/localTab" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="40.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:ss="@id/recentTab" app:s1="parent">
+            <TextView android:layout_gravity="center" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="bottom|center" android:tag="binding_6" android:background="?o9" android:layout_width="32.0dip" android:layout_height="1.0dip" android:layout_marginBottom="3.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrierTabEnd" android:layout_width="wrap_content" android:layout_height="wrap_content" app:p5="true" app:p6="start" app:xo="tvViewAll,ivMore" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/eg" android:id="@id/tvViewAll" android:tag="binding_7" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b3b" android:layout_marginEnd="12.0dip" app:c8="@id/tabLayout" app:se="parent" app:s1="@id/tabLayout" />
+    <ImageView android:layout_gravity="end" android:id="@id/ivMore" android:tag="binding_8" android:background="?brm" android:layout_width="48.0dip" android:layout_height="40.0dip" android:scaleType="center" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:se="parent" app:ss="@id/tabLayout" app:s1="parent" app:bf5="?d1" />
+    <FrameLayout android:id="@id/contentLayout" android:layout_width="0.0dip" android:layout_height="147.0dip" android:layout_marginTop="40.0dip" app:se="parent" app:sj="parent" app:s1="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/emptyView" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="115.0dip" android:layout_height="98.0dip" app:bf5="@drawable/bbc" />
+            <TextView android:textSize="16.0sp" android:textColor="?bz4" android:layout_gravity="center_horizontal" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

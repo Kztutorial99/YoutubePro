@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_subscription_outside_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:c8="parent" app:s1="parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:qn="4.0dip" app:jq="top" app:js="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:jk="enterAlways|scroll|snap">
+                <com.vanced.page.list_frame.NonInterceptingRecyclerView android:id="@id/headerRecyclerView" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:s1="parent" />
+                <com.google.android.material.tabs.TabLayout android:layout_gravity="start" android:id="@id/tabLayout" android:tag="binding_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="41.0dip" android:layout_marginStart="8.0dip" app:bqf="center" app:bqg="0.0dip" app:bqv="300.0dip" app:bqc="20.0dip" app:bqs="scrollable" app:bqy="4.0dip" app:bq0="4.0dip" app:bq2="@android:color/transparent" />
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout android:id="@id/refreshLayout" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" app:c0="@string/vh">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/contentRecyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

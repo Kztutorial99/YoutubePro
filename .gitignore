@@ -1,0 +1,8 @@
+node_modules/
+.next/
+*.jks
+keystore.jks
+output/
+.env
+.env.local
+.DS_Store

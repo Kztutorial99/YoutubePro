@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_channel_channel_item_0" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="30.0dip" android:paddingEnd="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_avatar" android:tag="binding_1" android:layout_width="72.0dip" android:layout_height="72.0dip" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="30.0dip" app:c8="@id/iv_avatar" app:se="parent" app:ss="@id/iv_avatar" app:s1="@id/iv_avatar">
+        <TextView android:textSize="14.0sp" android:textColor="?bz3" android:id="@id/tv_channel_name" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="?bz4" android:ellipsize="end" android:id="@id/tv_subscribers" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="?bz4" android:ellipsize="end" android:id="@id/tv_video_count" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:id="@id/tv_subscribe" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:includeFontPadding="false" android:textAllCaps="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

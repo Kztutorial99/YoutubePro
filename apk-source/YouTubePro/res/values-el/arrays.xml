@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Προσωρινή αποθήκευση</item>
+        <item>Δεν μπορεί να παίξει</item>
+        <item>Δεν μπορείτε να συνδεθείτε</item>
+        <item>Πάρα πολλές διαφημίσεις</item>
+        <item>Σφάλμα διαφημίσεων</item>
+        <item>Ακατάλληλο περιεχόμενο διαφήμισης</item>
+        <item>Χρησιμοποιήστε άλλη εφαρμογή</item>
+    </string-array>
+</resources>

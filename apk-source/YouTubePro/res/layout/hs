@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_mini_search_bar_0" android:background="@drawable/ox" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/i0" android:layout_marginBottom="@dimen/i0" android:layout_marginStart="12.0dip" app:c8="parent" app:sj="parent" app:s1="parent" app:bf5="@drawable/gz" />
+    <TextView android:textSize="@dimen/i1" android:textColor="@color/m6" android:id="@id/tv_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bce" android:layout_marginStart="18.0dip" app:c8="parent" app:se="parent" app:sn="0.0" app:ss="@id/iv_search" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_first_option_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/divider" android:background="?rf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:s1="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="?bz3" android:id="@id/tv_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:c8="parent" app:sa="@id/iv_arr" app:sj="parent" app:s0="@id/divider" />
+    <ImageView android:id="@id/iv_arr" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="12.0dip" app:c8="parent" app:se="parent" app:s1="parent" app:bf5="@drawable/k0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

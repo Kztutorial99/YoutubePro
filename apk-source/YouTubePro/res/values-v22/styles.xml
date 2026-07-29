@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="pc" parent="@style/li" />
+    <style name="p2" parent="@style/lg" />
+    <style name="il" parent="@style/tm">
+        <item name="android:statusBarColor">@color/gs</item>
+    </style>
+    <style name="li" parent="@style/lr">
+        <item name="bp">?android:actionModeShareDrawable</item>
+        <item name="qt">?android:editTextBackground</item>
+    </style>
+    <style name="lg" parent="@style/lf">
+        <item name="bp">?android:actionModeShareDrawable</item>
+        <item name="qt">?android:editTextBackground</item>
+    </style>
+</resources>

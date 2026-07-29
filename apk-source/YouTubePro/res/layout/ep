@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/flat_iv_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="centerCrop" app:c8="parent" app:sj="parent" app:s1="parent" app:br8="@style/fu" />
+    <TextView android:textSize="13.329987sp" android:textStyle="bold" android:textColor="@color/gs" android:ellipsize="end" android:id="@id/flat_tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.669983dip" android:maxLines="2" android:lineSpacingExtra="7.3399963dip" android:layout_marginStart="16.669983dip" app:se="parent" app:ss="@id/flat_iv_icon" app:s1="@id/flat_iv_icon" />
+    <TextView android:textSize="13.329987sp" android:textColor="#ffffd14d" android:ellipsize="end" android:id="@id/flat_tv_sub_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.669983dip" android:maxLines="1" app:c8="@id/flat_iv_icon" app:se="parent" app:ss="@id/flat_iv_icon" app:sj="@id/flat_tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

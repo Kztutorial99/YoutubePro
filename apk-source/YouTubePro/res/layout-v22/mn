@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llLike" android:background="?brm" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:saveEnabled="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivImage" android:saveEnabled="false" android:layout_width="34.0dip" android:layout_height="34.0dip" app:se="parent" app:sj="parent" app:s1="parent" />
+    <com.opensource.svgaplayer.SVGAImageView android:id="@id/svga_ivLike" android:saveEnabled="false" android:layout_width="64.0dip" android:layout_height="64.0dip" app:pa="false" app:zy="Backward" app:c8="@id/ivImage" app:se="@id/ivImage" app:sj="@id/ivImage" app:s1="@id/ivImage" app:y6="1" app:bfc="@string/bwf" app:bf5="@drawable/jd" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/gs" android:gravity="center" android:id="@id/tvText" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/pp" android:shadowRadius="4.0" app:se="@id/ivImage" app:sj="@id/ivImage" app:s0="@id/ivImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

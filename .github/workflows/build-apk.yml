@@ -1,0 +1,88 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install apktool
+        run: |
+          wget -q https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.11.1.jar \
+               -O /usr/local/bin/apktool.jar
+          printf '#!/bin/bash\njava -jar /usr/local/bin/apktool.jar "$@"\n' \
+               | sudo tee /usr/local/bin/apktool > /dev/null
+          sudo chmod +x /usr/local/bin/apktool
+          apktool --version
+
+      - name: Build APK
+        run: |
+          mkdir -p output
+          apktool b apk-source -o output/YouTubePro-mod-unsigned.apk
+
+      - name: Generate debug keystore
+        run: |
+          keytool -genkey -v \
+            -keystore keystore.jks \
+            -alias ytpro \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -dname "CN=YouTubePro, OU=Dev, O=YTPro, L=ID, S=ID, C=ID" \
+            -storepass ytpro123 \
+            -keypass ytpro123 \
+            -noprompt
+
+      - name: Sign APK (zipalign + apksigner)
+        run: |
+          BUILD_TOOLS=$(ls $ANDROID_HOME/build-tools/ | sort -V | tail -1)
+          BT="$ANDROID_HOME/build-tools/$BUILD_TOOLS"
+
+          $BT/zipalign -v -p 4 \
+            output/YouTubePro-mod-unsigned.apk \
+            output/YouTubePro-mod-aligned.apk
+
+          $BT/apksigner sign \
+            --ks keystore.jks \
+            --ks-key-alias ytpro \
+            --ks-pass pass:ytpro123 \
+            --key-pass pass:ytpro123 \
+            --out output/YouTubePro-mod.apk \
+            output/YouTubePro-mod-aligned.apk
+
+          echo "=== APK signed ==="
+          ls -lh output/YouTubePro-mod.apk
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YouTubePro-mod-${{ github.run_number }}
+          path: output/YouTubePro-mod.apk
+          retention-days: 30
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: "Build #${{ github.run_number }}"
+          body: |
+            🤖 Auto-built APK from commit ${{ github.sha }}
+            - Branch: ${{ github.ref_name }}
+            - Date: ${{ github.event.head_commit.timestamp }}
+          files: output/YouTubePro-mod.apk
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_section_config_info_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="?bz3" android:gravity="center_vertical" android:id="@id/tvTitle" android:background="?brd" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    <View android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+</FrameLayout>

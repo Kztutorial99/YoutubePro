@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutLoading" android:tag="layout/layout_channel_loading_medium_video_item_0" android:background="?brd" android:paddingTop="@dimen/r9" android:paddingBottom="@dimen/r9" android:layout_width="fill_parent" android:layout_height="wrap_content" app:se="parent" app:sn="0.5" app:sj="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/ivThumbnail" android:background="@drawable/rl" android:layout_width="fill_parent" android:layout_height="0.0dip" android:alpha="0.25" app:sl="h, 360:202" app:s1="parent" />
+    <View android:id="@id/ivMore" android:background="@drawable/ru" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="8.0dip" android:alpha="0.25" app:se="parent" app:s0="@id/ivThumbnail" />
+    <View android:id="@id/tvTitle1" android:background="@drawable/rp" android:layout_width="0.0dip" android:layout_height="10.0dip" android:layout_marginTop="8.0dip" android:alpha="0.25" android:layout_marginEnd="12.0dip" app:c9="@id/tvTitle2" app:sa="@id/ivMore" app:sj="parent" app:s0="@id/ivThumbnail" app:s3="packed" />
+    <View android:id="@id/tvTitle2" android:background="@drawable/rp" android:layout_width="0.0dip" android:layout_height="10.0dip" android:layout_marginTop="7.0dip" android:alpha="0.25" android:layout_marginEnd="60.0dip" app:se="@id/tvTitle1" app:sj="@id/tvTitle1" app:s0="@id/tvTitle1" />
+    <View android:id="@id/tvDesc1" android:background="@drawable/rp" android:layout_width="0.0dip" android:layout_height="8.0dip" android:layout_marginTop="11.0dip" android:alpha="0.15" app:se="@id/tvTitle2" app:sj="@id/tvTitle2" app:s0="@id/tvTitle2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

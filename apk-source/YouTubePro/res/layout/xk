@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_item_detail" android:tag="layout/fragment_video_detail_0" android:background="?bio" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/stub_ytb_ad_0" android:layout="@layout/tx" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+    <include android:id="@id/detail_thumbnail_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/c6" />
+    <include android:id="@id/stub_comment_tab" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_below="@id/detail_thumbnail_root_layout" layout="@layout/cy" />
+    <ViewStub android:id="@id/stub_ad" android:layout="@layout/cw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/detail_thumbnail_root_layout" android:layout_alignBottom="@id/detail_thumbnail_root_layout" />
+    <ViewStub android:id="@id/stub_vip_speed" android:layout="@layout/i4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="34.0dip" android:layout_alignBottom="@id/detail_thumbnail_root_layout" android:layout_centerHorizontal="true" />
+    <ViewStub android:id="@id/stub_playlist_info" android:layout="@layout/c8" android:inflatedId="@id/stub_playlist_info" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_below="@id/stub_comment_tab" />
+    <FrameLayout android:id="@id/watch_panel" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/stub_playlist_info">
+        <com.vanced.module.video_play_detail_impl.widget.VideoDetailRecyclerView android:id="@id/watch_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/ivScrollToTop" android:background="?uy" android:padding="6.0dip" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginBottom="32.0dip" android:layout_marginEnd="16.0dip" app:bf5="@drawable/nh" />
+        <include android:id="@id/relatedVideoTab" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/in" />
+        <include android:id="@id/error_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/k8" layout="@layout/ln" />
+        <View android:id="@id/skeletonShadow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" />
+    </FrameLayout>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/v_playlist_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/v_playlist_info_shadow" android:background="?bh9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/stub_playlist_info" />
+    <FrameLayout android:id="@id/panel_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.fragment.app.FragmentContainerView android:id="@id/v_comments_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/v_livechat_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ViewStub android:id="@id/stub_mini_player" android:layout="@layout/c5" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_guide" android:layout="@layout/c0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/stub_multi_ad" android:background="@color/dg" android:layout="@layout/f1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/stub_comment_tab" />
+    <ViewStub android:id="@id/stub_ytb_ad_1" android:layout="@layout/tx" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

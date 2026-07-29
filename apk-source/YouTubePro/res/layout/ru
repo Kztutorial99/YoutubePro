@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutMeToolbarEntrance" android:tag="layout/fragment_me_entrance_0" android:background="?brm" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/layoutAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:layout_gravity="end|center|top" android:tag="binding_1" android:background="@drawable/ky" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="7.0dip" android:layout_marginEnd="3.0dip" />
+    <TextView android:textSize="10.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/tvNotificationCount" android:tag="binding_2" android:background="@drawable/ev" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="8.0dip" android:minWidth="16.0dip" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" app:bf5="?mj" />
+</FrameLayout>

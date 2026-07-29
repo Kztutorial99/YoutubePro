@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="b7" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="pc" parent="@style/lk" />
+    <style name="p2" parent="@style/lv" />
+    <style name="ez" parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="eg" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="ev" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:textAppearance">@style/zb</item>
+    </style>
+    <style name="e4" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="ad" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="am" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="aj" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="oz" parent="@style/j">
+        <item name="l6">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="lk" parent="@style/li">
+        <item name="u">?android:actionBarItemBackground</item>
+        <item name="d">?android:actionMenuTextAppearance</item>
+        <item name="m">?android:actionMenuTextColor</item>
+        <item name="bo">?android:actionOverflowButtonStyle</item>
+        <item name="x1">@drawable/pf</item>
+        <item name="bot">?android:ratingBarStyleIndicator</item>
+        <item name="boq">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="lv" parent="@style/lg">
+        <item name="u">?android:actionBarItemBackground</item>
+        <item name="d">?android:actionMenuTextAppearance</item>
+        <item name="m">?android:actionMenuTextColor</item>
+        <item name="bo">?android:actionOverflowButtonStyle</item>
+        <item name="x1">@drawable/pf</item>
+        <item name="bot">?android:ratingBarStyleIndicator</item>
+        <item name="boq">?android:ratingBarStyleSmall</item>
+    </style>
+</resources>

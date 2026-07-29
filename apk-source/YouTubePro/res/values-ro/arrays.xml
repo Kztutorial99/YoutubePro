@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Tamponare</item>
+        <item>Nu se poate juca</item>
+        <item>Nu se poate autentifica</item>
+        <item>Prea multe reclame</item>
+        <item>Eroare de reclame</item>
+        <item>Conținut nepotrivit al reclamei</item>
+        <item>Folosiți o altă aplicație</item>
+    </string-array>
+</resources>

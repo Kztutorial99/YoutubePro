@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>التخزين المؤقت</item>
+        <item>لا يمكن التشغيل</item>
+        <item>لا يمكن الدخول</item>
+        <item>الإعلانات كثيرة جداً</item>
+        <item>مشكلة الاعلان</item>
+        <item>محتوى إعلان غير لائق</item>
+        <item>استخدم تطبيقًا آخر</item>
+    </string-array>
+</resources>

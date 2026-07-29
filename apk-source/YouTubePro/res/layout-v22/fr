@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_livechat_message_operation_0" android:paddingLeft="24.0dip" android:paddingTop="12.0dip" android:paddingRight="24.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dip" android:paddingVertical="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/operationIv" android:layout_width="24.0dip" android:layout_height="24.0dip" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="14.0sp" android:textColor="?wh" android:gravity="start" android:id="@id/operationNameTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="25.0dip" app:c8="@id/operationIv" app:se="parent" app:ss="@id/operationIv" app:s1="@id/operationIv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

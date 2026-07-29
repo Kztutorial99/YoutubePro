@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_debug_settings_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/m8" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:background="?brd" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="?bz3" android:gravity="center_vertical" android:id="@id/tvTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/bb0" android:layout_marginStart="24.0dip" bind:c8="parent" bind:sa="@id/scSwitch" bind:sj="parent" bind:s1="parent" bind:ja="20.0dip" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/scSwitch" android:tag="binding_2" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/bl6" android:layout_marginEnd="12.0dip" bind:c8="parent" bind:se="parent" bind:s1="parent" bind:bql="30.0dip" bind:bdq="@drawable/bl7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_3" android:background="?brd" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="?bz3" android:gravity="center_vertical" android:id="@id/tvVipLocalTime" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bpv" android:layout_marginStart="24.0dip" bind:c8="parent" bind:sj="parent" bind:s1="parent" />
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="16.0sp" android:textColor="?bz3" android:gravity="center_vertical" android:id="@id/etVipLocalTime" android:tag="binding_4" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:inputType="number" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" bind:c8="parent" bind:sa="@id/tvGo" bind:ss="@id/tvVipLocalTime" bind:s1="parent" />
+        <TextView android:textSize="26.0sp" android:textColor="?bz3" android:gravity="center" android:id="@id/tvGo" android:tag="binding_5" android:layout_width="64.0dip" android:layout_height="0.0dip" android:text="@string/bpk" android:layout_marginEnd="12.0dip" bind:c8="parent" bind:se="parent" bind:ss="@id/etVipLocalTime" bind:s1="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.flexbox.FlexboxLayout android:orientation="vertical" android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:z3="column" bind:z4="nowrap" />
+    </ScrollView>
+</LinearLayout>

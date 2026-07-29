@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/flat_image_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" app:se="parent" app:ss="@id/flat_more_app">
+        <ImageView android:id="@id/flat_fuzzy_image" android:background="#ffeaf8f4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" app:sa="@id/flat_landscape_detail" app:sj="parent" />
+        <ImageView android:id="@id/center_image" android:layout_width="0.0dip" android:layout_height="fill_parent" app:sa="@id/flat_landscape_detail" app:sj="parent" />
+        <include android:id="@id/flat_landscape_detail" android:layout_width="280.0dip" android:layout_height="fill_parent" app:se="parent" layout="@layout/ec" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.flatads.sdk.core.domain.ui.common.FlatMoreAppView android:id="@id/flat_more_app" android:visibility="gone" android:layout_width="77.0dip" android:layout_height="fill_parent" app:sj="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_channel_entrance_0" android:background="?ob" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/sd"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/clTitle" android:background="?rh" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="?e" android:layout_marginBottom="0.0dip" android:minHeight="@dimen/kq" android:translationZ="@dimen/kn" app:se="parent" app:sj="parent" app:s1="parent">
+        <ImageButton android:id="@id/ivBack" android:tag="binding_1" android:background="?brm" android:padding="@dimen/kt" android:focusable="true" android:clickable="true" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" android:layout_marginStart="@dimen/kf" app:c8="parent" app:sj="parent" app:s1="parent" />
+        <ImageView android:id="@id/ivEnd" android:tag="binding_2" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" app:c8="parent" app:sa="@id/ivReport" app:s1="parent" />
+        <ImageView android:id="@id/ivReport" android:tag="binding_3" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" app:c8="parent" app:se="parent" app:s1="parent" app:bf5="?m0" />
+        <TextView android:textSize="10.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvNotificationCount" android:tag="binding_4" android:background="@drawable/ev" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="8.0dip" android:minWidth="16.0dip" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginEnd="4.0dip" app:se="@id/ivEnd" app:s1="parent" app:bf5="?mj" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?bz3" android:ellipsize="end" android:gravity="start" android:tag="binding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_marginStart="@dimen/kz" app:c8="parent" app:sa="@id/ivEnd" app:ss="@id/ivBack" app:s1="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="0.0dip" app:c8="parent" app:s0="@id/clTitle">
+        <com.google.android.material.appbar.AppBarLayout android:background="@null" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" app:qn="0.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/llChannelInfo" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:jk="exitUntilCollapsed|scroll">
+                <include android:id="@id/ilBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/z7" />
+                <include android:id="@id/includeChannelInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/nu" />
+            </LinearLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="@dimen/ks" app:jk="noScroll" app:bqz="@drawable/bew" app:bqd="?rm" app:bqm="false" app:bqg="@dimen/kj" app:bqs="scrollable" app:bq3="?rg" app:bq5="@style/od" app:bq6="?ri" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:c0="@string/vh" />
+        <include android:layout_gravity="center" android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/tv" />
+        <include android:id="@id/emptyView" layout="@layout/q3" />
+        <include android:id="@id/errorView" layout="@layout/q5" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/aboutFragmentHolder" android:layout_width="fill_parent" android:layout_height="0.0dip" app:c8="parent" app:s0="@id/clTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanced.product.widget.RoundRadiusLayout android:tag="layout/ad_item_music_detail_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vanced.ad.ad_sdk.ui.NativeAdLayout android:id="@id/ad_native_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ad_native" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/ad_media_view_layout" android:background="#40000000" android:layout_width="0.0dip" android:layout_height="0.0dip" app:c9="@id/layout_title" app:se="parent" app:sj="parent" app:s1="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_title" android:background="#26000000" android:paddingTop="25.0dip" android:paddingBottom="25.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" app:c8="parent" app:se="parent" app:sj="parent">
+                <FrameLayout android:id="@id/ad_icon_layout" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginStart="12.0dip" app:c8="@id/ad_body" app:sj="parent" app:s1="@id/ad_headline">
+                    <ImageView android:id="@id/ad_icon" android:layout_width="38.0dip" android:layout_height="38.0dip" />
+                </FrameLayout>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start" android:id="@id/ad_headline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="4.0dip" android:drawableStart="@drawable/yq" android:layout_marginStart="8.0dip" android:layout_marginEnd="4.0dip" app:sa="@id/ad_call_to_action" app:ss="@id/ad_icon_layout" app:s1="parent" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="#66ffffff" android:ellipsize="end" android:gravity="start" android:id="@id/ad_body" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="4.0dip" app:c8="@id/ad_icon_layout" app:sa="@id/ad_call_to_action" app:sj="@id/ad_headline" />
+                <androidx.appcompat.widget.AppCompatButton android:textStyle="bold" android:textColor="?o9" android:gravity="center" android:id="@id/ad_call_to_action" android:tag="binding_1" android:padding="0.0dip" android:layout_width="100.0dip" android:layout_height="28.0dip" android:maxLines="1" android:layout_marginEnd="12.0dip" app:c8="@id/ad_body" app:se="parent" app:s1="@id/ad_headline" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <RelativeLayout android:id="@id/ad_choice_layout" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="5.0dip" app:c8="parent" app:se="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/ad_banner" android:background="#40000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vanced.ad.ad_sdk.ui.NativeAdLayout>
+</com.vanced.product.widget.RoundRadiusLayout>

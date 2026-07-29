@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_game_item" android:tag="layout/item_tab_game_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_game" android:tag="binding_1" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="?bz3" android:ellipsize="end" android:id="@id/tv_name" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:layout_below="@id/img_game" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_short_video_0" android:background="@color/pb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:orientation="vertical" android:id="@id/viewPager" android:tag="binding_1" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/topShadow" android:background="@drawable/bez" android:layout_width="fill_parent" android:layout_height="0.0dip" bind:c8="@id/barrier_top_search" bind:s1="parent" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_top_search" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:p6="bottom" bind:xo="ivBack,flTopSearch" />
+    <androidx.constraintlayout.widget.Group android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:xo="topShadow,flTopSearch" />
+    <FrameLayout android:id="@id/flTopSearch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip" bind:se="parent" bind:ss="@id/ivBack" bind:s1="parent" bind:jf="16.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guide_back" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:so="48.0dip" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_guide_btm" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:p6="bottom" bind:xo="flTopSearch,guide_back" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/v_comments_container" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="360.0dip" bind:c8="parent" />
+    <ImageView android:id="@id/ivBack" android:background="?brm" android:padding="@dimen/kt" android:visibility="gone" android:saveEnabled="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginStart="@dimen/kf" bind:c8="@id/barrier_guide_btm" bind:sj="parent" bind:s1="parent" bind:bf5="@drawable/je" />
+    <include android:id="@id/loadingView" android:saveEnabled="false" android:layout_width="@dimen/xp" android:layout_height="@dimen/xp" bind:c8="parent" bind:se="parent" bind:sj="parent" bind:s1="parent" layout="@layout/hb" />
+    <include android:id="@id/errorView" android:background="@color/gs" android:saveEnabled="false" layout="@layout/ml" />
+    <ViewStub android:id="@id/vs_guide" android:saveEnabled="false" android:layout="@layout/mp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:tag="@string/bfp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_video_detail_skeleton_function_b_0" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/btn1" android:tag="binding_1" android:layout_width="27.0dip" android:layout_height="27.0dip" android:alpha="0.25" app:sa="@id/btn2" app:sj="parent" app:s1="parent" />
+    <View android:id="@id/btn2" android:tag="binding_2" android:layout_width="27.0dip" android:layout_height="27.0dip" android:alpha="0.25" app:sa="@id/btn3" app:ss="@id/btn1" app:s1="@id/btn1" />
+    <View android:id="@id/btn3" android:tag="binding_3" android:layout_width="27.0dip" android:layout_height="27.0dip" android:alpha="0.25" app:sa="@id/btn4" app:ss="@id/btn2" app:s1="@id/btn1" />
+    <View android:id="@id/btn4" android:tag="binding_4" android:layout_width="27.0dip" android:layout_height="27.0dip" android:alpha="0.25" app:sa="@id/btn5" app:ss="@id/btn3" app:s1="@id/btn1" />
+    <View android:id="@id/btn5" android:tag="binding_5" android:layout_width="27.0dip" android:layout_height="27.0dip" android:alpha="0.25" app:sa="@id/btn6" app:ss="@id/btn4" app:s1="@id/btn1" />
+    <View android:id="@id/btn6" android:tag="binding_6" android:layout_width="27.0dip" android:layout_height="27.0dip" android:alpha="0.25" app:sa="@id/btn7" app:ss="@id/btn5" app:s1="@id/btn1" />
+    <View android:id="@id/btn7" android:tag="binding_7" android:layout_width="27.0dip" android:layout_height="27.0dip" android:alpha="0.25" app:se="parent" app:ss="@id/btn6" app:s1="@id/btn1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

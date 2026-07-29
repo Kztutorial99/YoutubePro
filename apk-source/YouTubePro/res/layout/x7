@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/item_cps_campaign_big_card_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vanced.product.widget.RoundRadiusLayout android:id="@id/rl_goods_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="14.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="46.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_goods" android:tag="binding_1" android:background="?fg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_above="@id/layout_des" />
+        <View android:id="@id/ad_campaign_action_bg" android:background="@drawable/l1" android:layout_width="fill_parent" android:layout_height="172.0dip" android:layout_alignParentBottom="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/ad_campaign_action" android:layout_width="200.0dip" android:layout_height="36.0dip" android:layout_marginBottom="19.0dip" android:text="@string/ys" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_ad_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:shadowColor="#dd000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+        <View android:id="@id/bg_shadow" android:background="?fi" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    </com.vanced.product.widget.RoundRadiusLayout>
+</FrameLayout>

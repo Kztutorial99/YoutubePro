@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>กำลังบัฟเฟอร์</item>
+        <item>เล่นไม่ได้</item>
+        <item>ไม่สามารถเข้าสู่ระบบ</item>
+        <item>มีโฆษณามากเกินไป</item>
+        <item>ข้อบกพร่องของโฆษณา</item>
+        <item>เนื้อหาโฆษณาที่ไม่เหมาะสม</item>
+        <item>ใช้แอปอื่น</item>
+    </string-array>
+</resources>

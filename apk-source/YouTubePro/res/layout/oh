@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_featured_container_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layoutWrap" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:se="parent" bind:sj="parent" bind:s1="parent">
+        <FrameLayout android:id="@id/unfoldLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.vanced.module.featured_impl.widget.HomeFilterTabLayout android:id="@id/tabLayout" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="41.0dip" android:paddingStart="8.0dip" bind:se="parent" bind:sj="parent" bind:s1="parent" bind:bqg="0.0dip" bind:bqv="300.0dip" bind:bqc="20.0dip" bind:bqs="scrollable" bind:bqy="4.0dip" bind:bq0="4.0dip" bind:bq2="@android:color/transparent" />
+            <View android:background="?brs" android:layout_width="fill_parent" android:layout_height="@dimen/ol" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/layoutFeaturedParent" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="0.0dip" bind:c8="parent" bind:se="parent" bind:sj="parent" bind:s0="@id/layoutWrap">
+        <com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout android:id="@id/refreshLayout" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/a8" android:paddingEnd="@dimen/a8" />
+        </com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/dc" android:gravity="center_vertical" android:id="@id/toolbar" android:background="?o8" android:layout_width="fill_parent" android:layout_height="55.0dip" app:bax="@style/dc" app:bh3="@style/m8" />
+    <WebView android:id="@id/reCaptchaWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="55.0dip" />
+</RelativeLayout>

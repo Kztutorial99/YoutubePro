@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_copyright_form_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vanced.module.feedback_impl.widget.copyright_form.FormRecyclerView android:id="@id/recyclerview" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom|center" android:id="@id/ivScrollToTop" android:tag="binding_1" android:background="?uy" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginBottom="32.0dip" android:layout_marginEnd="16.0dip" app:bf5="@drawable/nh" />
+    <include layout="@layout/qm" />
+    <FrameLayout android:tag="binding_2" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/ni" />
+    </FrameLayout>
+</FrameLayout>

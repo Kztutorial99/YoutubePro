@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanced.module.operative_banner_impl.views.OperativeBannerViewPager2Container android:orientation="vertical" android:tag="layout/layout_banner_list_0" android:paddingTop="@dimen/r9" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.vanced.module.operative_banner_impl.views.OperativeBannerIndicator android:layout_gravity="bottom|center" android:id="@id/operativeBannerIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+</com.vanced.module.operative_banner_impl.views.OperativeBannerViewPager2Container>

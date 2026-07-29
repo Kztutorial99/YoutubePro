@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Load chậm</item>
+        <item>Không phát được</item>
+        <item>Không thể đăng nhập</item>
+        <item>Qúa nhiều quảng cáo</item>
+        <item>Lỗi quảng cáo</item>
+        <item>Nội dung quảng cáo không hợp lệ</item>
+        <item>Sử dụng ứng dụng khác</item>
+    </string-array>
+</resources>

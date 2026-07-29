@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textColor="?ri" android:layout_gravity="center" android:id="@id/tv_name" android:tag="layout/layout_top_tab_custom_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_icon" android:tag="layout/layout_top_tab_custom_1" android:visibility="invisible" android:layout_width="28.0dip" android:layout_height="28.0dip" />
+    <View android:layout_gravity="end|center|top" android:id="@id/view_red" android:tag="layout/layout_top_tab_custom_2" android:background="@drawable/be3" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+</merge>

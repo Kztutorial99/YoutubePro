@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>बफरिंग</item>
+        <item>नहीं चल सकता</item>
+        <item>लॉग इन नहीं कर सकते</item>
+        <item>बहुत सारे विज्ञापन</item>
+        <item>विज्ञापन बग</item>
+        <item>अनुपयुक्त विज्ञापन सामग्री</item>
+        <item>किसी अन्य ऐप का उपयोग करें</item>
+    </string-array>
+</resources>

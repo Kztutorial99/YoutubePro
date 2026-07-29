@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_playlist_outside_horizontal_head_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?bz3" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginBottom="4.0dip" android:text="@string/b2q" android:layout_marginStart="12.0dip" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/eg" android:id="@id/tvViewAll" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b3b" android:layout_marginEnd="12.0dip" android:paddingHorizontal="5.0dip" android:paddingVertical="5.0dip" app:c8="parent" app:se="parent" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

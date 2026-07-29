@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Buffering</item>
+        <item>"Can't play"</item>
+        <item>"Can't log in"</item>
+        <item>Too many ads</item>
+        <item>Ads bug</item>
+        <item>Inappropriate ad content</item>
+        <item>Use another app</item>
+    </string-array>
+</resources>

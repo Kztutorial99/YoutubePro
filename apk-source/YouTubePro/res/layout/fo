@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_livechat_filter_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/selectFLagIv" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="16.0dip" android:scaleType="fitXY" android:layout_marginStart="15.0dip" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="14.0sp" android:textColor="?wz" android:id="@id/filterTitleTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" android:layout_marginEnd="16.0dip" app:c9="@id/filterContentTv" app:se="parent" app:ss="@id/selectFLagIv" app:s1="@id/selectFLagIv" app:s3="packed" />
+    <TextView android:textSize="11.0sp" android:textColor="?wt" android:id="@id/filterContentTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="16.0dip" app:c8="parent" app:se="@id/filterTitleTv" app:sj="@id/filterTitleTv" app:s0="@id/filterTitleTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

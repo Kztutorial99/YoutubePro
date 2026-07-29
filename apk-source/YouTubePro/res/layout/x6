@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_goods_item" android:tag="layout/item_cps_big_list_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_goods" android:tag="binding_1" android:padding="2.0dip" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:scaleType="fitCenter" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="?bz3" android:ellipsize="end" android:id="@id/ad_body" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignTop="@id/img_goods" android:lineSpacingExtra="4.0dip" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/img_goods" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/img_goods" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/img_goods">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffee4d2d" android:ellipsize="end" android:id="@id/ad_goods_price" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/ad_call_to_action" android:background="@drawable/lg" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/yj" android:paddingStart="14.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/view_separator" android:background="?brs" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/img_goods" />
+</RelativeLayout>

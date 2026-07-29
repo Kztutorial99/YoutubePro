@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/guideLayout" android:tag="layout/layout_login_guide_featured_0" android:layout_width="fill_parent" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivLoginGuideBg" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" android:scaleType="fitXY" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" app:bf5="?ui" />
+    <TextView android:textSize="13.0sp" android:textColor="?oh" android:ellipsize="end" android:id="@id/tvLoginGuideMsg" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="10.0dip" android:layout_marginEnd="12.0dip" app:c8="@id/ivLoginGuideBg" app:sa="@id/ivLoginGuideBtnBg" app:sd="1.0" app:sj="@id/ivLoginGuideBg" app:s1="@id/ivLoginGuideBg" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivLoginGuideBtnBg" android:tag="binding_2" android:layout_width="92.0dip" android:layout_height="32.0dip" android:layout_marginEnd="10.0dip" app:c8="@id/ivLoginGuideBg" app:se="@id/ivLoginGuideBg" app:ss="@id/tvLoginGuideMsg" app:s1="@id/ivLoginGuideBg" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="center" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="0.0dip" app:c8="@id/ivLoginGuideBtnBg" app:se="@id/ivLoginGuideBtnBg" app:sj="@id/ivLoginGuideBtnBg" app:s1="@id/ivLoginGuideBtnBg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

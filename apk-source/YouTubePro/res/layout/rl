@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawerLayout" android:tag="layout/fragment_me_side_slip_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/constraintLayout" android:tag="binding_1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="169.0dip" android:layout_height="226.0dip" app:se="parent" app:s1="parent" app:bf5="@drawable/oy" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="162.0dip" android:layout_height="308.0dip" app:c8="parent" app:sj="parent" app:bf5="@drawable/o1" />
+        <include android:id="@id/toolbar" app:se="parent" app:sj="parent" app:s1="parent" layout="@layout/hk" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recyclerView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s0="@id/toolbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

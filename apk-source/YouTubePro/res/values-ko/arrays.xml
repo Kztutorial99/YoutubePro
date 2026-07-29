@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>버퍼링</item>
+        <item>재생하지 못합니다</item>
+        <item>로그인하지 못합니다</item>
+        <item>광고가 너무 많습니다.</item>
+        <item>광고 오류</item>
+        <item>부당한 광고 내용</item>
+        <item>다른 앱 사용</item>
+    </string-array>
+</resources>

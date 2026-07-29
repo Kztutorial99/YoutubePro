@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_account_manager_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/m8" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="75.0dip">
+            <ImageView android:id="@id/ivAvatar" android:tag="binding_3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginStart="@dimen/rt" app:c8="parent" app:sj="parent" app:s1="parent" />
+            <FrameLayout android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="fill_parent" app:c8="parent" app:sj="parent" app:s1="parent">
+                <include android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" layout="@layout/n9" />
+            </FrameLayout>
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?bz3" android:ellipsize="end" android:id="@id/tvName" android:tag="binding_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/rt" android:layout_marginEnd="@dimen/rt" app:c9="@id/tvMail" app:ss="@id/ivAvatar" app:s1="@id/ivAvatar" app:s3="packed" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:ellipsize="end" android:id="@id/tvMail" android:tag="binding_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/rt" android:layout_marginEnd="@dimen/rt" app:c8="@id/ivAvatar" app:se="parent" app:ss="@id/ivAvatar" app:s0="@id/tvName" />
+            <View android:background="?rf" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginStart="@dimen/rt" android:layout_marginEnd="@dimen/rt" app:c8="parent" app:se="parent" app:sj="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.flexbox.FlexboxLayout android:orientation="vertical" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:z3="column" app:z4="nowrap" />
+    </LinearLayout>
+</FrameLayout>

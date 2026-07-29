@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layoutVideoItemRoot" android:tag="layout/layout_not_interested_item_0" android:background="?rp" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?bz3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b27" android:layout_marginStart="12.0dip" app:c8="parent" app:sj="parent" app:s1="parent" />
+    <TextView android:textSize="@dimen/xf" android:textStyle="bold" android:textColor="?o9" android:gravity="center" android:id="@id/tvUndo" android:background="?brd" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/b0g" android:layout_marginEnd="4.0dip" app:c8="parent" app:se="parent" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

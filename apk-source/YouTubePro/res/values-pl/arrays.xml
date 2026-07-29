@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Buforowanie</item>
+        <item>Nie można grać</item>
+        <item>Nie można się zalogować</item>
+        <item>Za dużo reklam</item>
+        <item>Błąd reklam</item>
+        <item>Nieodpowiednia treść reklam</item>
+        <item>Korzystać z innej aplikacji</item>
+    </string-array>
+</resources>

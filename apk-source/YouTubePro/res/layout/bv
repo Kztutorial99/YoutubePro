@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/load_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load Ad" />
+    <Button android:id="@id/show_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show Ad" />
+    <Button android:id="@id/add_feedback_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Feedback Icon" />
+    <include layout="@layout/pn" />
+    <FrameLayout android:id="@id/fl_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/layout_add_playlist_item_0" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:layout_gravity="start|center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateOnly="true" android:indeterminateDuration="200" android:indeterminateBehavior="repeat" android:layout_marginStart="14.0dip" layout="@layout/n9" />
+    <ImageView android:layout_gravity="start|center" android:tag="binding_1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="@dimen/rt" />
+    <TextView android:textSize="16.0sp" android:textColor="?bz3" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="48.0dip" android:maxLines="2" android:layout_marginStart="48.0dip" android:layout_marginEnd="@dimen/rt" />
+</FrameLayout>

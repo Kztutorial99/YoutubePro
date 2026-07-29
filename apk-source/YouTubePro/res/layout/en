@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.flatads.sdk.core.domain.ui.common.AdWebView android:id="@id/flat_ad_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.flatads.sdk.ui.view.AdInfoView android:id="@id/flat_ad_web_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginEnd="4.0dip" app:vi="true" app:se="parent" app:s1="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

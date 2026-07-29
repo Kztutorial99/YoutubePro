@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/layoutLoading" android:tag="layout/layout_loading_one_home_filter_0" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <View android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="26.0dip" android:alpha="0.8" android:layout_marginStart="12.0dip" />
+    <View android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="26.0dip" android:alpha="0.8" android:layout_marginStart="8.0dip" />
+    <View android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="26.0dip" android:alpha="0.8" android:layout_marginStart="8.0dip" />
+    <View android:tag="binding_4" android:layout_width="0.0dip" android:layout_height="26.0dip" android:alpha="0.8" android:layout_marginStart="8.0dip" />
+    <View android:tag="binding_5" android:layout_width="0.0dip" android:layout_height="26.0dip" android:alpha="0.8" android:layout_marginStart="12.0dip" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Puffern</item>
+        <item>Kann nicht spielen</item>
+        <item>Kann nicht anmelden</item>
+        <item>Zu viele Anzeigen</item>
+        <item>Anzeigenfehler</item>
+        <item>Unangemessener Anzeigeninhalt</item>
+        <item>Andere App verwenden</item>
+    </string-array>
+</resources>

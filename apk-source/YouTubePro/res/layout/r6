@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:tag="layout/fragment_search_result_container_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:tag="binding_1" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:qn="0.0dip">
+        <com.google.android.material.tabs.TabLayout android:id="@id/result_container_tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/ks" android:translationZ="@dimen/xl" app:jk="enterAlways|scroll" app:bqz="@drawable/bew" app:bqd="?rm" app:bqm="false" app:bqg="@dimen/kj" app:bqs="fixed" app:bq3="?rg" app:bq5="@style/f1" app:bq6="?ri" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/search_result_view_pager" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:c0="@string/vh" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

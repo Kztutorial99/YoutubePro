@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Buffering</item>
+        <item>Tidak dapat memutar</item>
+        <item>Tidak bisa login</item>
+        <item>Terlalu banyak iklan</item>
+        <item>Bug iklan</item>
+        <item>Konten iklan yang tidak pantas</item>
+        <item>Gunakan aplikasi lain</item>
+    </string-array>
+</resources>

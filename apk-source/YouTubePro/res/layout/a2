@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_avatar_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="36.0dip" android:layout_height="48.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="24.0dip" android:minHeight="24.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" app:bf5="?ms" />
+</FrameLayout>

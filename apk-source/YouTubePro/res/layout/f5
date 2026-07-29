@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:tag="layout/item_video_detail_functional_botton_0" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:id="@id/rippleView" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/buttonRoot" android:tag="binding_2" android:paddingTop="@dimen/rb" android:paddingBottom="@dimen/rb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="55.0dip" />
+    </FrameLayout>
+</FrameLayout>

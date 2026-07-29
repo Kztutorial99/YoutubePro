@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_history_inside_list_0" android:background="?ob" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="history_list"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/qj" />
+    <com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout android:id="@id/refreshLayout" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/previewRoot" android:tag="layout/layout_shorts_preview_0" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/locationView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sx="0.2" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivShortsPreview" android:background="@drawable/ok" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="0.0dip" app:sl="w, 100: 178" app:se="@id/locationView" app:sj="@id/locationView" app:s1="parent" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/gu" android:textColor="#ffffffff" android:id="@id/tvShortsPreview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:se="@id/locationView" app:sj="@id/locationView" app:s0="@id/ivShortsPreview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

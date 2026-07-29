@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/fragment_shorts_options_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/optionsRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ue="true" app:uo="200.0dip" app:ux="true" app:c0="@string/cv">
+        <View android:id="@id/view_bg" android:background="?ti" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/v_title" android:background="@drawable/rt" android:layout_width="38.0dip" android:layout_height="4.0dip" android:layout_marginTop="10.0dip" app:se="parent" app:sj="parent" app:s1="parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="16.0dip" app:c8="parent" app:se="@id/view_bg" app:sj="@id/view_bg" app:s0="@id/v_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

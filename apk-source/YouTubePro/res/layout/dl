@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_my_video_plan_d_item_0" android:background="?brd" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?bz3" android:ellipsize="end" android:id="@id/tvName" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_marginStart="18.0dip" android:layout_marginEnd="120.0dip" app:c4="true" app:c8="parent" app:se="parent" app:sn="0.0" app:sj="parent" app:s1="parent" app:s3="packed" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff939393" android:id="@id/tvLabel" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="12.0dip" app:c4="true" app:c8="@id/tvName" app:se="parent" app:sn="0.0" app:ss="@id/tvName" app:s1="@id/tvName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

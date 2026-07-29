@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="pc" parent="@style/l0" />
+    <style name="p2" parent="@style/l1" />
+    <style name="l0" parent="@style/lc">
+        <item name="tn">?android:dialogCornerRadius</item>
+    </style>
+    <style name="l1" parent="@style/ls">
+        <item name="tn">?android:dialogCornerRadius</item>
+    </style>
+</resources>

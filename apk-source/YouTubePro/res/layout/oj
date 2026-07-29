@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_help_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="?rh" android:layout_width="fill_parent" android:layout_height="?e" android:minHeight="@dimen/kq" android:translationZ="@dimen/kn">
+        <ImageView android:id="@id/ivBack" android:tag="binding_1" android:padding="@dimen/rp" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" app:c8="parent" app:sj="parent" app:s1="parent" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?bz3" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bxt" app:c8="parent" app:sa="@id/ivEnd" app:ss="@id/ivBack" app:s1="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/dj" />
+</LinearLayout>

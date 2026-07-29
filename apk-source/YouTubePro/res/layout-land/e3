@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/flat_image_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" app:se="parent" app:ss="@id/flat_more_app">
+        <ImageView android:id="@id/flat_fuzzy_image" android:background="#ffeaf8f4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitXY" app:c9="@id/flat_portrait_detail" app:s1="parent" />
+        <ImageView android:id="@id/center_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" app:c9="@id/flat_portrait_detail" app:se="parent" app:sj="parent" app:s1="parent" />
+        <include android:id="@id/flat_portrait_detail" android:layout_width="fill_parent" android:layout_height="70.0dip" app:c8="parent" layout="@layout/em" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.flatads.sdk.core.domain.ui.common.FlatMoreAppView android:id="@id/flat_more_app" android:visibility="gone" android:layout_width="77.0dip" android:layout_height="fill_parent" app:sj="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

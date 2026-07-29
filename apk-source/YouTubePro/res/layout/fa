@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_livechat_empty_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:c8="parent" app:se="parent" app:sj="parent" app:s1="parent" app:s2="0.4">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivLiveChatEmpty" android:layout_width="180.0dip" android:layout_height="102.0dip" android:scaleType="fitXY" app:bf5="@drawable/bbi" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#ff888888" android:gravity="center" android:id="@id/tvLiveChatEmpty" android:layout_width="243.0dip" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/bzt" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

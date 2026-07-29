@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_trending_music_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" bind:c9="@id/tabLayout" bind:se="parent" bind:sj="parent" bind:s1="parent" layout="@layout/zc" />
+    <FrameLayout android:id="@id/layoutThrendingParent" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout android:id="@id/refreshLayout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" bind:c8="parent" bind:se="parent" bind:sj="parent" bind:s1="parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/a8" android:paddingEnd="@dimen/a8" />
+        </com.vanced.page.list_business_interface.view.PagerSwipeRefreshLayout>
+    </FrameLayout>
+</LinearLayout>

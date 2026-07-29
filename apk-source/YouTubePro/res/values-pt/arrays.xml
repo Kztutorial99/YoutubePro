@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m">
+        <item>Amortecendo</item>
+        <item>Não pode reproduzir</item>
+        <item>Não pode log in</item>
+        <item>Anúncios demais</item>
+        <item>Erro nos anúncios</item>
+        <item>Conteúdo inadequado do anúncio</item>
+        <item>Use outro aplicativo</item>
+    </string-array>
+</resources>

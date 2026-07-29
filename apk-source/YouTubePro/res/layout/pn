@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanced.ad.ad_sdk.ui.NativeAdLayout android:id="@id/ad_native_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ad_native" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ad_icon" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="8.0dip" app:sj="parent" app:s1="parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/ad_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This is Ad Headline" android:maxLines="1" android:layout_marginStart="8.0dip" app:c9="@id/ad_body" app:ss="@id/ad_icon" app:s1="@id/ad_icon" app:s3="packed" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/ad_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="This is Ad Body" android:maxLines="2" app:c8="@id/ad_icon" app:sj="@id/ad_headline" app:s0="@id/ad_headline" />
+        <RelativeLayout android:id="@id/ad_choice_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:se="parent" app:s1="parent" />
+        <FrameLayout android:id="@id/ad_media_view_layout" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" app:sl="w,9:16" app:se="parent" app:sj="parent" app:s0="@id/ad_icon" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ad_call_to_action" android:background="#ff00ff00" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="Install" app:c8="parent" app:s0="@id/ad_media_view_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@id/ad_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.vanced.ad.ad_sdk.ui.NativeAdLayout>

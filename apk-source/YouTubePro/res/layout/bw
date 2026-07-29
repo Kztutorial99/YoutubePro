@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vanced.product.view.CpsBigListAdLayout android:id="@id/ad_multi_native_layout" android:tag="layout/ad_item_cps_big_list_0" android:background="?ob" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_title" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="58.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?bz3" android:ellipsize="end" android:id="@id/ad_headline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/ad_count_down" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ad_count_down" android:background="@drawable/lh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/include_interact_action" android:layout_centerVertical="true" android:layout_marginEnd="4.0dip" android:layout_toStartOf="@id/include_interact_action" />
+        <include android:id="@id/include_interact_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" layout="@layout/xw" />
+    </RelativeLayout>
+    <View android:id="@id/view_separator" android:background="?brs" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_title" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/ad_goods_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_separator" />
+</com.vanced.product.view.CpsBigListAdLayout>

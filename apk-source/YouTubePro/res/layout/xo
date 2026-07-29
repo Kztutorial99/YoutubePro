@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_sub_not_login_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/zc" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/bbw" bind:sl="h, 360:240" bind:s1="parent" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?bz3" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bya" bind:se="parent" bind:sj="parent" bind:s0="@id/iv_top" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff939393" android:gravity="center" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/bye" android:lineSpacingMultiplier="1.3" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip" bind:s0="@id/tv_title" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center" android:tag="binding_1" android:layout_width="112.0dip" android:layout_height="42.0dip" android:layout_marginTop="16.0dip" android:text="@string/byl" android:textAllCaps="false" bind:se="parent" bind:sj="parent" bind:s0="@id/tv_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" bind:c8="parent" bind:se="parent" bind:sj="parent">
+            <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" bind:bf5="@drawable/sh" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bbp" android:layout_marginStart="2.0dip" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
